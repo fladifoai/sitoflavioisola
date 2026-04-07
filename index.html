@@ -161,6 +161,9 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 .hotel-item__desc{font-size:.85rem;font-weight:400;text-transform:none;line-height:1.7;opacity:.8}
 
 /* ACCOMMODATIONS */
+#page-accommodations .section::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:url('ventotene_clean_hd.jpg') center/cover no-repeat;filter:brightness(.45) saturate(1.2);z-index:0}
+#page-accommodations .section{position:relative}
+#page-accommodations .section>*{position:relative;z-index:1}
 .accom-grid{display:flex;flex-wrap:wrap;gap:1.5rem;max-width:1200px;margin:0 auto;justify-content:center}
 .accom-grid .accom-card{width:calc(25% - 1.2rem);min-width:220px}
 @media(max-width:1024px){.accom-grid .accom-card{width:calc(50% - 1rem)}}
@@ -436,7 +439,7 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 
   <!-- ====================== ACCOMMODATIONS ====================== -->
   <div class="page" id="page-accommodations">
-    <section class="section" style="padding-top:120px;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('ventotene_clean_hd.jpg') center center/cover no-repeat;background-attachment:scroll;color:#fff;min-height:100vh">
+    <section class="section" style="padding-top:120px;position:relative;color:#fff;min-height:100vh;overflow:hidden">
       <h2 class="section__title" style="color:#fff">ACCOMMODATION</h2>
       <p class="section__subtitle" style="color:rgba(255,255,255,0.85)">Ventotene è un'isola di appena 1,5 km², dove le automobili non esistono e ogni struttura è a pochi minuti a piedi dal mare e dai luoghi dell'evento. Qui non servono taxi — servono solo un paio di scarpe comode e la voglia di perdersi tra i vicoli.</p>
       <div class="island-map">
