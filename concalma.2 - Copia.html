@@ -1,214 +1,276 @@
-<!-- build:fadf-cc-20260404-v2 -->
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="FADF-CC-2026-0404">
-  <meta name="dc.creator" content="RkxBVklPIEFVR1VTVE8gREkgRk9HR0lB">
-  <meta name="build" content="20260404-fadf">
   <title>Concalma Island | Festival 1-3 Maggio 2026 — Ventotene</title>
-  <meta name="description" content="3 giorni di musica, arte e outdoor sull'isola di Ventotene. House, Afro House, Tech House, Deep House. 1-3 Maggio 2026. Pacchetti da €49,90. Three days of pure madness.">
+  <meta name="description" content="Festival esperienziale a Ventotene, 1-3 Maggio 2026. Tre giorni di musica house, afro house, tech house, arte e outdoor su un'isola senza auto. Pacchetti da €49,90. Posti limitati.">
   <meta name="keywords" content="festival Ventotene 2026, eventi primo maggio Lazio, Concalma Island, dj set house music isola, festival musica elettronica maggio 2026, cosa fare primo maggio, isole Pontine eventi, weekend isola Lazio, afro house dj set, festival boutique italia 2026">
   <meta http-equiv="Content-Language" content="it">
   <link rel="canonical" href="https://concalma.cloud/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="CONCALMA ISLAND — THREE DAYS OF PURE MADNESS">
-  <meta property="og:description" content="Festival esperienziale 1-3 Maggio 2026 · Isola di Ventotene · Musica · Arte · Outdoor · Pacchetti da €49,90">
+  <meta property="og:title" content="Concalma Island — Festival Ventotene 1-3 Maggio 2026">
+  <meta property="og:description" content="Festival esperienziale a Ventotene. Tre giorni di musica house, afro house, tech house, arte e outdoor. Pacchetti da €49,90.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://concalma.cloud/">
   <meta property="og:image" content="https://concalma.cloud/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Festival Concalma Island Ventotene 2026 - Musica elettronica sull'isola">
   <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="Concalma Island">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="CONCALMA ISLAND — THREE DAYS OF PURE MADNESS">
-  <meta name="twitter:description" content="Festival 1-3 Maggio 2026 · Isola di Ventotene · House · Afro House · Tech House">
+  <meta name="twitter:title" content="Concalma Island — Festival Ventotene 1-3 Maggio 2026">
+  <meta name="twitter:description" content="Festival esperienziale a Ventotene. Tre giorni di musica house, afro house, tech house, arte e outdoor. Pacchetti da €49,90.">
   <meta name="twitter:image" content="https://concalma.cloud/og-image.jpg">
+  <meta name="twitter:site" content="@concalma_">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0000CC">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://i0.wp.com">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="dns-prefetch" href="https://i0.wp.com">
+  <link rel="dns-prefetch" href="https://images.unsplash.com">
 
   <!-- Font: Helvetica (system) -->
   <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{--blue:#1400FF;--white:#fff;--black:#111;--grey:#888;--grey-light:#e0e0e0;--radius:16px;--radius-sm:12px;--radius-pill:30px;--font:'Helvetica Neue',Helvetica,Arial,sans-serif}
+:root{--blue:#0000CC;--blue-dark:#0000aa;--white:#FFFFFF;--black:#1E1E1E;--grey:#888;--grey-light:#e0e0e0;--radius:20px;--radius-sm:16px;--radius-pill:50px;--font:'Helvetica Neue',Helvetica,Arial,sans-serif;--shadow:0 8px 30px rgba(0,0,0,.08);--shadow-hover:0 16px 40px rgba(0,0,0,.12);--transition:all .3s cubic-bezier(.4,0,.2,1)}
 html{scroll-behavior:smooth}
-body{font-family:var(--font);background:var(--white);color:var(--black);line-height:1.6;overflow-x:hidden;text-align:justify}
+body{font-family:var(--font);background:var(--white);color:var(--black);line-height:1.7;overflow-x:hidden;text-align:justify;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .section--blue{text-align:left}
 .section--blue .section__title{text-align:center}
 a{text-decoration:none;color:inherit}ul{list-style:none}img{max-width:100%;display:block}
 h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 
-.navbar{position:fixed;top:0;left:0;width:100%;background:var(--blue);z-index:1000;padding:0 2rem;height:60px;display:flex;align-items:center;justify-content:space-between}
-.navbar__logo{color:var(--white);font-size:1.4rem;font-weight:900;text-transform:uppercase;letter-spacing:2px;cursor:pointer}
-.navbar__links{display:flex;gap:1.5rem;align-items:center}
-.navbar__links a{color:var(--white);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;transition:opacity .2s;cursor:pointer}
-.navbar__links a:hover{opacity:.7}
-.navbar__links a.active{opacity:1;border-bottom:2px solid #fff;padding-bottom:2px}
-.navbar__hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
-.navbar__hamburger span{display:block;width:24px;height:2px;background:var(--white);transition:.3s}
-.navbar__mobile-menu{display:none;position:fixed;top:60px;left:0;width:100%;background:var(--blue);padding:1rem 2rem 2rem;flex-direction:column;gap:1rem;z-index:999}
+/* Fade-in animation */
+.fade-in{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
+/* NAVBAR */
+.navbar{position:fixed;top:0;left:0;width:100%;background:rgba(0,0,204,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);z-index:1000;padding:0 2.5rem;height:64px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.08)}
+.navbar__logo{color:var(--white);font-size:1.3rem;font-weight:900;text-transform:uppercase;letter-spacing:3px;cursor:pointer;display:flex;align-items:center;gap:.6rem}
+.navbar__logo img{height:34px;width:auto}
+.hero__logo{width:130px;height:auto;margin:0 auto 2rem;animation:floatLogo 3s ease-in-out infinite}
+@keyframes floatLogo{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.footer__logo{width:50px;height:auto;margin:0 auto 1.5rem;opacity:.8}
+.navbar__links{display:flex;gap:2rem;align-items:center}
+.navbar__links a{color:var(--white);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;transition:var(--transition);cursor:pointer;opacity:.8;padding:.4rem 0;position:relative}
+.navbar__links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--white);transition:width .3s ease}
+.navbar__links a:hover{opacity:1}
+.navbar__links a:hover::after,.navbar__links a.active::after{width:100%}
+.navbar__links a.active{opacity:1}
+.navbar__hamburger{display:none;flex-direction:column;gap:6px;cursor:pointer;background:none;border:none;padding:4px}
+.navbar__hamburger span{display:block;width:22px;height:2px;background:var(--white);transition:.3s;border-radius:2px}
+.navbar__mobile-menu{display:none;position:fixed;top:64px;left:0;width:100%;background:rgba(0,0,204,.98);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:1.5rem 2.5rem 2.5rem;flex-direction:column;gap:1.2rem;z-index:999}
 .navbar__mobile-menu.open{display:flex}
-.navbar__mobile-menu a{color:var(--white);font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;cursor:pointer}
+.navbar__mobile-menu a{color:var(--white);font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;cursor:pointer;padding:.3rem 0;opacity:.85;transition:opacity .2s}
+.navbar__mobile-menu a:hover{opacity:1}
 
 .page{display:none}.page.active{display:block}
 
-/* fadf:cc:20260404:RkxBVklPIEFVR1VTVE8gREkgRk9HR0lB */
-.hero{background:var(--blue);color:var(--white);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:100px 2rem 60px}
-.hero__title{font-size:clamp(4rem,15vw,12rem);font-weight:900;letter-spacing:4px;margin-bottom:1rem}
-.hero__artists{font-size:clamp(.7rem,1.5vw,1rem);font-weight:700;text-transform:uppercase;letter-spacing:3px;margin-bottom:2rem;opacity:.9}
-.hero__video{width:100%;max-width:800px;aspect-ratio:16/9;background:rgba(255,255,255,.1);border-radius:var(--radius);margin-bottom:2rem;overflow:hidden}
+/* HERO */
+.hero{background:linear-gradient(165deg,#0000CC 0%,#0000aa 50%,#000088 100%);color:var(--white);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 2rem 80px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 50%,rgba(255,255,255,.03) 0%,transparent 50%);pointer-events:none}
+.hero__title{font-size:clamp(2.8rem,12vw,9rem);font-weight:900;letter-spacing:6px;margin-bottom:.8rem;line-height:.95}
+.hero__artists{font-size:clamp(.7rem,1.4vw,.95rem);font-weight:600;text-transform:uppercase;letter-spacing:4px;margin-bottom:2.5rem;opacity:.7}
+.hero__video{width:100%;max-width:800px;aspect-ratio:16/9;background:rgba(255,255,255,.06);border-radius:var(--radius);margin-bottom:2.5rem;overflow:hidden;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.hero__play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.9);border:none;cursor:pointer;font-size:26px;color:var(--blue);z-index:2;transition:var(--transition);line-height:72px;text-align:center;padding:0;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+.hero__play-btn:hover{transform:translate(-50%,-50%) scale(1.1);background:#fff;box-shadow:0 8px 30px rgba(0,0,0,.3)}
 .hero__video video{width:100%;height:100%;object-fit:cover;border-radius:var(--radius)}
-.hero__badge{display:inline-block;background:var(--white);color:var(--blue);padding:.6rem 1.5rem;border-radius:var(--radius-pill);font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:2px}
+.hero__badge{display:inline-block;background:var(--white);color:var(--blue);padding:.7rem 2rem;border-radius:var(--radius-pill);font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:3px;box-shadow:0 4px 15px rgba(0,0,0,.1)}
 
-.section{padding:80px 2rem;max-width:1200px;margin:0 auto}
-.section--blue{background:var(--blue);color:var(--white);border-radius:var(--radius);max-width:1100px;margin:40px auto;padding:60px 2rem}
-.section__title{font-size:clamp(2rem,5vw,3.5rem);margin-bottom:1.5rem;text-align:center}
-.section__subtitle{font-size:1rem;font-weight:400;text-align:center;max-width:700px;margin:0 auto 3rem;line-height:1.8;text-transform:none}
+/* SECTIONS */
+.section{padding:100px 2rem;max-width:1200px;margin:0 auto}
+.section--blue{background:linear-gradient(165deg,#0000CC 0%,#0000aa 100%);color:var(--white);border-radius:var(--radius);max-width:1100px;margin:50px auto;padding:70px 3rem;box-shadow:0 20px 60px rgba(0,0,204,.15)}
+.section__title{font-size:clamp(1.8rem,4.5vw,3.2rem);margin-bottom:1.8rem;text-align:center;letter-spacing:2px}
+.section__subtitle{font-size:1rem;font-weight:400;text-align:center;max-width:700px;margin:0 auto 3rem;line-height:1.8;text-transform:none;opacity:.85}
 .welcome{max-width:800px;margin:0 auto;text-align:justify}
-.welcome p{margin-bottom:1.2rem;font-size:1rem;line-height:1.8}
+.welcome p{margin-bottom:1.4rem;font-size:1rem;line-height:1.9;color:#444}
 
-.programme{display:flex;flex-direction:column;gap:2rem}
-.programme__day-title{font-size:1.3rem;font-weight:900;text-transform:uppercase;margin-bottom:1rem;letter-spacing:1px}
-.programme__item{display:flex;align-items:center;justify-content:center;gap:1rem;padding:.6rem 0;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid rgba(255,255,255,.15)}
-.programme__time{min-width:50px;font-weight:800}
+/* PROGRAMME */
+.programme{display:flex;flex-direction:column;gap:2.5rem}
+.programme__day-title{font-size:1.2rem;font-weight:900;text-transform:uppercase;margin-bottom:1rem;letter-spacing:2px;opacity:.9}
+.programme__item{display:flex;align-items:center;justify-content:center;gap:1rem;padding:.8rem 0;font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;border-bottom:1px solid rgba(255,255,255,.1);transition:padding-left .2s}
+.programme__item:hover{padding-left:.5rem}
+.programme__time{min-width:50px;font-weight:800;opacity:.7}
 .programme__event{flex:1}
-.programme__highlight{display:inline-block;background:var(--white);color:var(--blue);padding:.3rem .8rem;border-radius:var(--radius-pill);font-size:.75rem;font-weight:800}
+.programme__highlight{display:inline-block;background:var(--white);color:var(--blue);padding:.4rem 1rem;border-radius:var(--radius-pill);font-size:.72rem;font-weight:800;letter-spacing:.5px}
 
-.quote{text-align:center;padding:80px 2rem;max-width:900px;margin:0 auto}
-.quote__text{font-size:clamp(1.2rem,3vw,1.8rem);font-weight:700;line-height:1.5;color:var(--blue);font-style:italic}
+/* QUOTE */
+.quote{text-align:center;padding:100px 2rem;max-width:900px;margin:0 auto}
+.quote__text{font-size:clamp(1.1rem,2.8vw,1.7rem);font-weight:600;line-height:1.6;color:var(--blue);font-style:italic;opacity:.9}
 
-.packages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1100px;margin:0 auto}
-.package-card{border:2px solid var(--grey-light);border-radius:var(--radius-sm);padding:2rem 1.5rem;display:flex;flex-direction:column;transition:transform .2s}
-.package-card:hover{transform:translateY(-4px)}
-.package-card--featured{background:var(--blue);color:var(--white);border-color:var(--blue)}
-.package-card__name{font-size:1.2rem;font-weight:900;text-transform:uppercase;margin-bottom:.3rem}
-.package-card__price{font-size:2rem;font-weight:900;margin-bottom:1rem}
-.package-card__desc{font-size:.85rem;line-height:1.6;margin-bottom:1.5rem;text-transform:none;font-weight:400;opacity:.85;text-align:justify}
+/* PACKAGES */
+.packages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;max-width:1100px;margin:0 auto}
+.package-card{border:2px solid var(--blue);border-radius:var(--radius-sm);padding:0;display:flex;flex-direction:column;transition:var(--transition);box-shadow:var(--shadow);background:var(--white);overflow:hidden}
+.package-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover)}
+.package-card--featured{background:var(--white);color:var(--black);border-color:var(--blue);box-shadow:0 12px 40px rgba(0,0,204,.15)}
+.package-card--featured:hover{box-shadow:0 20px 50px rgba(0,0,204,.25)}
+.package-card__header{background:var(--blue);color:var(--white);padding:1.5rem 2rem;text-align:center}
+.package-card--featured .package-card__header{background:linear-gradient(165deg,#0000CC 0%,#0000aa 100%)}
+.package-card__name{font-size:1rem;font-weight:900;text-transform:uppercase;margin-bottom:.2rem;letter-spacing:1.5px}
+.package-card__price{font-size:2.2rem;font-weight:900;margin-bottom:0}
+.package-card__content{padding:2rem}
+.package-card__desc{font-size:.85rem;line-height:1.7;margin-bottom:1.5rem;text-transform:none;font-weight:400;color:var(--black);opacity:.85;text-align:justify}
 .package-card__list{display:flex;flex-direction:column;gap:.5rem;flex:1}
-.package-card__item{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:.4rem 0;border-bottom:1px solid rgba(0,0,0,.06)}
-.package-card--featured .package-card__item{border-bottom-color:rgba(255,255,255,.15)}
+.package-card__item{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:.5rem 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--black)}
+.package-card--featured .package-card__item{border-bottom-color:rgba(0,0,0,.06);color:var(--black)}
 .package-card__item--excluded{color:var(--grey-light);text-decoration:line-through}
-.package-card--featured .package-card__item--excluded{color:rgba(255,255,255,.3)}
-.package-card__item--expandable{cursor:pointer;position:relative;padding-right:1.5rem}
+.package-card--featured .package-card__item--excluded{color:var(--grey-light)}
+.package-card__item--expandable{cursor:pointer;position:relative;padding-right:1.5rem;transition:opacity .2s}
+.package-card__item--expandable:hover{opacity:.7}
 .package-card__item--expandable::after{content:'+';position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:1rem}
 .package-card__item--expandable.active::after{content:'−'}
-.package-card__item-detail{font-size:.75rem;font-weight:400;text-transform:none;padding:.5rem 0;line-height:1.5;display:none;opacity:.8;text-align:justify}
+.package-card__item-detail{font-size:.75rem;font-weight:400;text-transform:none;padding:.5rem 0;line-height:1.6;display:none;opacity:.75;text-align:justify}
 .package-card__item-detail.show{display:block}
-.packages-note{text-align:center;font-size:.8rem;margin-top:2rem;opacity:.6}
+.packages-note{text-align:center;font-size:.8rem;margin-top:2rem;opacity:.5}
 
-.booking-status{display:flex;flex-direction:column;gap:1.5rem;max-width:600px;margin:0 auto}
-.booking-bar__label{font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;display:flex;justify-content:space-between;margin-bottom:.5rem}
-.booking-bar__track{width:100%;height:8px;background:rgba(255,255,255,.2);border-radius:4px;overflow:hidden}
-.booking-bar__fill{height:100%;background:var(--white);border-radius:4px;transition:width 1s ease}
+/* BOOKING */
+.booking-status{display:flex;flex-direction:column;gap:1.8rem;max-width:600px;margin:0 auto}
+.booking-bar__label{font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;display:flex;justify-content:space-between;margin-bottom:.6rem;opacity:.9}
+.booking-bar__track{width:100%;height:6px;background:rgba(255,255,255,.15);border-radius:3px;overflow:hidden}
+.booking-bar__fill{height:100%;background:var(--white);border-radius:3px;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
 
-.countdown{text-align:center;padding:80px 2rem}
-.countdown__label{font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:3px;margin-bottom:2rem}
-.countdown__digits{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
+/* COUNTDOWN */
+.countdown{text-align:center;padding:100px 2rem}
+.countdown__label{font-size:.9rem;font-weight:800;text-transform:uppercase;letter-spacing:4px;margin-bottom:2.5rem;opacity:.6}
+.countdown__digits{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap}
 .countdown__block{display:flex;flex-direction:column;align-items:center}
-.countdown__number{font-size:clamp(3rem,8vw,6rem);font-weight:900;color:var(--blue);line-height:1}
-.countdown__unit{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--grey);margin-top:.5rem}
+.countdown__number{font-size:clamp(3rem,8vw,5.5rem);font-weight:900;color:var(--blue);line-height:1}
+.countdown__unit{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--grey);margin-top:.6rem}
 
+/* HOTELS */
 .hotels-accordion{display:flex;flex-direction:column;gap:.5rem;max-width:800px;margin:0 auto}
-.hotel-item{border-bottom:1px solid rgba(255,255,255,.15)}
-.hotel-item__header{display:flex;align-items:center;justify-content:space-between;padding:1rem 0;cursor:pointer;font-size:.9rem;font-weight:800;text-transform:uppercase;letter-spacing:1px}
-.hotel-item__header::after{content:'+';font-size:1.2rem}
+.hotel-item{border-bottom:1px solid rgba(255,255,255,.1)}
+.hotel-item__header{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 0;cursor:pointer;font-size:.85rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;transition:opacity .2s}
+.hotel-item__header:hover{opacity:.8}
+.hotel-item__header::after{content:'+';font-size:1.2rem;transition:transform .3s}
 .hotel-item.active .hotel-item__header::after{content:'−'}
 .hotel-item__body{display:none;padding-bottom:1rem}
 .hotel-item.active .hotel-item__body{display:block}
 .hotel-item__img{width:100%;height:200px;object-fit:cover;border-radius:var(--radius-sm);margin-bottom:.8rem}
-.hotel-item__desc{font-size:.85rem;font-weight:400;text-transform:none;line-height:1.6;opacity:.85}
+.hotel-item__desc{font-size:.85rem;font-weight:400;text-transform:none;line-height:1.7;opacity:.8}
 
+/* ACCOMMODATIONS */
 .accom-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2rem;max-width:1100px;margin:0 auto}
-.accom-card{border:2px solid var(--grey-light);border-radius:var(--radius-sm);overflow:hidden;transition:transform .2s}
-.accom-card:hover{transform:translateY(-4px)}
-.accom-card__img{width:100%;height:220px;object-fit:cover}
-.accom-card__body{padding:1.5rem;text-align:justify}
-.accom-card__name{font-size:1.1rem;font-weight:900;text-transform:uppercase;margin-bottom:.5rem}
-.accom-card__type{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin-bottom:.8rem}
-.accom-card__desc{font-size:.85rem;line-height:1.6;margin-bottom:1rem}
-.accom-card__tags{display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center}
-.accom-card__tag{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:.3rem .6rem;border:1px solid var(--blue);border-radius:var(--radius-pill);color:var(--blue)}
+.accom-card{border:2px solid var(--blue);border-radius:var(--radius-sm);overflow:hidden;transition:var(--transition);box-shadow:var(--shadow);background:var(--white)}
+.accom-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover)}
+.accom-card__img{width:100%;height:220px;object-fit:cover;transition:transform .5s ease}
+.accom-card:hover .accom-card__img{transform:scale(1.03)}
+.accom-card__body{padding:1.8rem;text-align:justify}
+.accom-card__name{font-size:.95rem;font-weight:900;text-transform:uppercase;margin:-.1rem -1.8rem .8rem;padding:.7rem 1.8rem;background:var(--blue);color:var(--white);letter-spacing:1px}
+.accom-card__type{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--blue);margin-bottom:.8rem}
+.accom-card__desc{font-size:.85rem;line-height:1.7;margin-bottom:1rem;color:var(--black)}
+.accom-card__tags{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center}
+.accom-card__tag{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:.35rem .7rem;border:1px solid var(--blue);border-radius:var(--radius-pill);color:var(--blue);transition:var(--transition)}
+.accom-card__tag:hover{background:var(--blue);color:var(--white)}
 
+/* MAP */
 .island-map{max-width:900px;margin:0 auto 3rem;text-align:center}
 .island-map svg{width:100%;max-width:700px;height:auto}
-.map-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-top:1.5rem}
-.map-legend__item{font-size:.75rem;font-weight:700;text-transform:uppercase;display:flex;align-items:center;gap:.4rem}
+.map-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:1.2rem;margin-top:1.5rem}
+.map-legend__item{font-size:.7rem;font-weight:700;text-transform:uppercase;display:flex;align-items:center;gap:.5rem;letter-spacing:.5px}
 .map-legend__dot{width:10px;height:10px;border-radius:50%;background:var(--black)}
 .map-legend__dot--venue{background:var(--blue)}
 
-.partners-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;max-width:900px;margin:0 auto;align-items:center}
-.partner{text-align:center}
-.partner__label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:.8rem}
-.partner__logo{height:50px;width:auto;margin:0 auto;object-fit:contain;transition:filter .3s}
-.partner__logo:hover{opacity:.7}
-.partner__name{font-size:.8rem;font-weight:900;text-transform:uppercase;letter-spacing:1px;margin-top:.6rem;color:var(--white)}
+/* PARTNERS */
+.partners-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem;max-width:900px;margin:0 auto;align-items:center}
+.partner{text-align:center;transition:var(--transition)}
+.partner:hover{transform:translateY(-3px)}
+.partner__label{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:.8rem;opacity:.5}
+.partner__logo{height:50px;width:auto;margin:0 auto;object-fit:contain;transition:var(--transition);opacity:.8}
+.partner__logo:hover{opacity:1}
+.partner__name{font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;margin-top:.8rem;color:var(--white);opacity:.9}
 
+/* FAQ */
 .faq-list{max-width:800px;margin:0 auto}
-.faq-item{border-bottom:1px solid rgba(255,255,255,.15)}
-.faq-item__question{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 0;cursor:pointer;font-size:.9rem;font-weight:800;text-transform:uppercase;letter-spacing:1px}
-.faq-item__question::after{content:'+';font-size:1.2rem;flex-shrink:0;margin-left:1rem}
+.faq-item{border-bottom:1px solid rgba(255,255,255,.1)}
+.faq-item__question{display:flex;align-items:center;justify-content:space-between;padding:1.4rem 0;cursor:pointer;font-size:.85rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;transition:opacity .2s}
+.faq-item__question:hover{opacity:.8}
+.faq-item__question::after{content:'+';font-size:1.1rem;flex-shrink:0;margin-left:1rem;transition:transform .3s}
 .faq-item.active .faq-item__question::after{content:'−'}
-.faq-item__answer{display:none;padding-bottom:1.2rem;font-size:.85rem;font-weight:400;text-transform:none;line-height:1.7;opacity:.85}
+.faq-item__answer{display:none;padding-bottom:1.4rem;font-size:.85rem;font-weight:400;text-transform:none;line-height:1.8;opacity:.8}
 .faq-item.active .faq-item__answer{display:block}
 
-.social-links{display:flex;justify-content:center;gap:1.5rem;padding:40px 0}
-.social-links a{font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--blue);border:2px solid var(--blue);padding:.5rem 1.2rem;border-radius:var(--radius-pill);transition:all .2s}
-.social-links a:hover{background:var(--blue);color:var(--white)}
+/* SOCIAL */
+.social-links{display:flex;justify-content:center;gap:1rem;padding:50px 0}
+.social-links a{font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--blue);border:2px solid var(--blue);padding:.6rem 1.5rem;border-radius:var(--radius-pill);transition:var(--transition)}
+.social-links a:hover{background:var(--blue);color:var(--white);transform:translateY(-2px);box-shadow:0 4px 15px rgba(0,0,204,.2)}
 
+/* ARTISTS */
 .artists-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:2rem;max-width:1100px;margin:0 auto}
-.artist-card{border:2px solid var(--grey-light);border-radius:var(--radius-sm);overflow:hidden;transition:transform .2s}
-.artist-card:hover{transform:translateY(-4px)}
-.artist-card__img{width:100%;height:300px;object-fit:cover}
-.artist-card__body{padding:1.5rem;text-align:justify}
-.artist-card__name{font-size:1.3rem;font-weight:900;text-transform:uppercase;margin-bottom:.3rem}
-.artist-card__genre{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--blue);margin-bottom:1rem}
-.artist-card__bio{font-size:.85rem;line-height:1.6;margin-bottom:1.2rem}
+.artist-card{border:2px solid var(--blue);border-radius:var(--radius-sm);overflow:hidden;transition:var(--transition);box-shadow:var(--shadow);background:var(--white)}
+.artist-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover)}
+.artist-card__img{width:100%;height:300px;object-fit:cover;transition:transform .5s ease}
+.artist-card:hover .artist-card__img{transform:scale(1.03)}
+.artist-card__body{padding:1.8rem;text-align:justify}
+.artist-card__name{font-size:1.1rem;font-weight:900;text-transform:uppercase;margin:-.1rem -1.8rem 1rem;padding:.8rem 1.8rem;background:var(--blue);color:var(--white);letter-spacing:1px}
+.artist-card__genre{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--blue);margin-bottom:1rem}
+.artist-card__bio{font-size:.85rem;line-height:1.7;margin-bottom:1.2rem;color:var(--black)}
 .artist-card__links{display:flex;gap:.8rem;justify-content:center}
-.artist-card__link{font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--blue);border:1px solid var(--blue);padding:.3rem .8rem;border-radius:var(--radius-pill);transition:all .2s}
-.artist-card__link:hover{background:var(--blue);color:var(--white)}
+.artist-card__link{font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--blue);border:1.5px solid var(--blue);padding:.4rem 1rem;border-radius:var(--radius-pill);transition:var(--transition)}
+.artist-card__link:hover{background:var(--blue);color:var(--white);transform:translateY(-1px)}
 
-/* v:fadf-20260404-633 */
-.footer{background:var(--black);color:var(--white);text-align:center;padding:40px 2rem 100px}
-.footer__links{display:flex;justify-content:center;gap:1.5rem;margin-bottom:1.5rem;flex-wrap:wrap}
-.footer__links a{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;opacity:.7;transition:opacity .2s}
+/* FOOTER */
+.footer{background:var(--black);color:var(--white);text-align:center;padding:50px 2rem 110px}
+.footer__links{display:flex;justify-content:center;gap:1.8rem;margin-bottom:1.5rem;flex-wrap:wrap}
+.footer__links a{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;opacity:.5;transition:var(--transition)}
 .footer__links a:hover{opacity:1}
-.footer__copy{font-size:.7rem;opacity:.4}
+.footer__copy{font-size:.65rem;opacity:.3;letter-spacing:.5px}
 
-.cta-fixed{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:999;background:var(--white);color:var(--blue);border:2px solid var(--blue);padding:.8rem 2rem;border-radius:var(--radius-pill);font-family:var(--font);font-size:.8rem;font-weight:900;text-transform:uppercase;letter-spacing:1px;cursor:pointer;text-decoration:none;display:inline-block;transition:all .2s;box-shadow:0 4px 20px rgba(0,0,0,.15);white-space:nowrap}
-.cta-fixed:hover{background:var(--blue);color:var(--white)}
+/* CTA */
+.cta-fixed{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:999;background:var(--white);color:var(--blue);border:2px solid var(--blue);padding:.8rem 2.5rem;border-radius:var(--radius-pill);font-family:var(--font);font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;cursor:pointer;text-decoration:none;display:inline-block;transition:var(--transition);box-shadow:0 6px 25px rgba(0,0,0,.12);white-space:nowrap}
+.cta-fixed:hover{background:var(--blue);color:var(--white);transform:translateX(-50%) translateY(-2px);box-shadow:0 10px 35px rgba(0,0,204,.25)}
 
-.cookie-banner{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);z-index:998;background:var(--white);color:var(--black);border:2px solid var(--grey-light);border-radius:var(--radius);padding:1.2rem 1.5rem;max-width:600px;width:calc(100% - 2rem);box-shadow:0 8px 30px rgba(0,0,0,.15);font-size:.8rem;line-height:1.6;text-align:justify}
+/* COOKIE */
+.cookie-banner{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);z-index:998;background:var(--white);color:var(--black);border:1px solid var(--grey-light);border-radius:var(--radius);padding:1.5rem 2rem;max-width:560px;width:calc(100% - 2rem);box-shadow:0 12px 40px rgba(0,0,0,.12);font-size:.8rem;line-height:1.7;text-align:justify}
 .cookie-banner p{margin-bottom:1rem}
 .cookie-banner__actions{display:flex;gap:.8rem;justify-content:center}
-.cookie-banner__btn{font-family:var(--font);font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;padding:.6rem 1.2rem;border-radius:var(--radius-pill);cursor:pointer;border:2px solid var(--blue);transition:all .2s}
+.cookie-banner__btn{font-family:var(--font);font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;padding:.6rem 1.4rem;border-radius:var(--radius-pill);cursor:pointer;border:2px solid var(--blue);transition:var(--transition)}
 .cookie-banner__btn--accept{background:var(--blue);color:var(--white)}
-.cookie-banner__btn--accept:hover{background:#0000cc}
+.cookie-banner__btn--accept:hover{background:var(--blue-dark)}
 .cookie-banner__btn--reject{background:var(--white);color:var(--blue)}
 .cookie-banner__btn--reject:hover{background:var(--blue);color:var(--white)}
 
-.legal{max-width:800px;margin:0 auto;padding-top:100px;text-align:justify}
-.legal h1{font-size:2.5rem;margin-bottom:2rem}
-.legal h2{font-size:1.2rem;margin:2rem 0 .8rem}
-.legal p,.legal li{font-size:.9rem;line-height:1.8;margin-bottom:.8rem}
+/* LEGAL */
+.legal{max-width:800px;margin:0 auto;padding-top:120px;text-align:justify}
+.legal>h2:first-child{font-size:2.2rem;margin-bottom:2rem;letter-spacing:2px}
+.legal h3{font-size:1.1rem;margin:2rem 0 .8rem;letter-spacing:1px}
+.legal p,.legal li{font-size:.9rem;line-height:1.9;margin-bottom:.8rem;color:#444}
 .legal ul{padding-left:1.5rem;list-style:disc}
 
+/* RESPONSIVE */
 @media(max-width:900px){.packages-grid{grid-template-columns:1fr;max-width:500px}.partners-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){.navbar__links{display:none}.navbar__hamburger{display:flex}.hero__title{font-size:clamp(3rem,12vw,6rem)}.section{padding:60px 1.2rem}.section--blue{margin:20px 1rem;padding:40px 1.2rem}.social-links{flex-wrap:wrap}.artists-grid,.accom-grid{grid-template-columns:1fr}.cta-fixed{font-size:.7rem;padding:.7rem 1.2rem}}
-@media(max-width:480px){.partners-grid{grid-template-columns:1fr 1fr;gap:1.5rem}.countdown__number{font-size:2.5rem}}
+@media(max-width:768px){.navbar__links{display:none}.navbar__hamburger{display:flex}.navbar{padding:0 1.5rem}.hero__title{font-size:clamp(2.2rem,10vw,4rem)}.hero__logo{width:90px}.section{padding:70px 1.5rem}.section--blue{margin:30px 1rem;padding:50px 1.5rem}.social-links{flex-wrap:wrap;gap:.8rem}.artists-grid,.accom-grid{grid-template-columns:1fr}.cta-fixed{font-size:.68rem;padding:.7rem 1.5rem}.countdown__digits{gap:1.5rem}}
+@media(max-width:480px){.partners-grid{grid-template-columns:1fr 1fr;gap:1.5rem}.countdown__number{font-size:2.5rem}.hero__artists{letter-spacing:2px}.package-card__content{padding:1.5rem 1.2rem}}
+
+/* Grid inline responsive */
+@media(max-width:600px){
+[style*="grid-template-columns:repeat(3"]{grid-template-columns:repeat(2,1fr) !important}
+[style*="grid-template-columns:1fr 1fr;gap:1rem"]{grid-template-columns:1fr !important}
+}
   </style>
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <span class="navbar__logo" data-nav="home">CONCALMA</span>
+    <span class="navbar__logo" data-nav="home"><img src="concalma_logo_clean.png" alt="Concalma Island logo" width="32" height="32">CONCALMA</span>
     <div class="navbar__links">
       <a data-nav="home" class="active">Home</a>
       <a data-nav="artists">Artists</a>
       <a data-nav="accommodations">Dove Dormirai</a>
       <a data-nav="packages">Pacchetti</a>
-      <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener">Prenota</a>
+      <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener noreferrer">Prenota</a>
     </div>
     <button class="navbar__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
@@ -217,26 +279,32 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
     <a data-nav="artists">Artists</a>
     <a data-nav="accommodations">Dove Dormirai</a>
     <a data-nav="packages">Pacchetti</a>
-    <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener">Prenota</a>
+    <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener noreferrer">Prenota</a>
   </div>
 
   <!-- ====================== HOME ====================== -->
   <div class="page active" id="page-home">
     <section class="hero">
+      <img class="hero__logo" src="concalma_logo_clean.png" alt="Concalma Island logo" width="120" height="120">
       <h1 class="hero__title">CONCALMA ISLAND</h1>
-      <h2 style="font-size:clamp(.8rem,2vw,1.2rem);font-weight:800;letter-spacing:4px;margin-bottom:1.5rem;opacity:.9">THREE DAYS OF PURE MADNESS</h2>
+      <p style="font-size:clamp(.8rem,2vw,1.2rem);font-weight:800;text-transform:uppercase;letter-spacing:4px;margin-bottom:1.5rem;opacity:.9">THREE DAYS OF PURE MADNESS</p>
       <p class="hero__artists">Eternal Love · Giuliano Lomonte · Fabrizio Sala · Cianfo · Andrea D'Angeli · Iole · Gemello</p>
-      <div class="hero__video"><video src="canvas_site.mov" autoplay muted loop playsinline alt="Festival Concalma Island Ventotene 2026"></video></div>
+      <div class="hero__video" aria-label="Video promozionale del festival Concalma Island a Ventotene">
+        <video id="heroVideo" autoplay muted loop playsinline preload="metadata" webkit-playsinline>
+          <source src="canvas_site.mp4" type="video/mp4">
+        </video>
+        <button id="videoPlayBtn" class="hero__play-btn" aria-label="Riproduci video" style="display:none">&#9654;</button>
+      </div>
       <span class="hero__badge">1 · 2 · 3 MAGGIO / VENTOTENE / 3 DAYS OF PURE MADNESS</span>
-      <p style="max-width:650px;margin:1.5rem auto 0;font-size:.85rem;opacity:.8;text-transform:none;font-weight:400;line-height:1.7">Concalma Island è il festival esperienziale del 1-3 Maggio 2026 sull'isola di Ventotene, nel cuore del Mar Tirreno. Tre giorni di musica house, afro house, tech house e deep house, arte, food e attività outdoor su un'isola senza auto tra Lazio e Campania. Il weekend del Primo Maggio non è mai stato così.</p>
+      <p style="max-width:680px;margin:1.5rem auto 0;font-size:.88rem;opacity:.75;text-transform:none;font-weight:400;line-height:1.8">Un'isola dove non esistono automobili. Un porto scavato nella roccia dai romani duemila anni fa. Il mare più blu del Tirreno. E per tre giorni, dal 1 al 3 maggio 2026, Ventotene diventa il palcoscenico di qualcosa che non hai mai vissuto prima. Musica house, afro house, tech house e deep house. Arte dal vivo. Cibo autentico. Tramonti che non dimenticherai. Concalma Island non è un festival — è il weekend del Primo Maggio che stavi aspettando.</p>
     </section>
     <section class="section">
       <h2 class="section__title">BENVENUTI A CONCALMA ISLAND</h2>
       <div class="welcome">
-        <p>Un'isola lunga appena tre chilometri, senza auto, senza caos, dove le case color pastello si affacciano su un porto scavato nel tufo dagli antichi romani. Ventotene è questo: un angolo di Tirreno dove il tempo rallenta e il mare detta il ritmo delle giornate.</p>
-        <p>Concalma Island è un'esperienza di tre giorni su quest'isola, dal 1 al 3 maggio 2026. Un mix esclusivo di musica, arte, cibo e attività outdoor che prende forma attraverso tutto ciò che ci rappresenta davvero: persone, creativi, amici.</p>
-        <p>Sette artisti tra DJ set, live performance e live painting. Trekking sui sentieri dell'isola con Trekk'amo Nature Club, yoga al tramonto, uscite in barca a vela con la Lega Navale di Ventotene. Cena in un ristorante sul porto, colazione all'Antico Forno Aiello, street food tra i vicoli del borgo e un brunch finale vista mare. E poi la notte: dieci ore di musica no-stop a Le Parracine, opening party e afterparty al Il Gabbiano.</p>
-        <p>Non è solo musica. Non è solo cibo. Non è solo arte. È tre giorni di pura magia su un'isola dove tutto il resto scompare.</p>
+        <p>Immagina un'isola lunga appena tre chilometri, dove le auto non esistono e le strade sono sentieri tra case color pastello che si affacciano su un porto scavato nel tufo dagli antichi romani. Ventotene è esattamente questo: un angolo dimenticato di Tirreno dove il tempo rallenta, il vento profuma di salsedine e il mare detta il ritmo di ogni giornata. Un luogo che sembra uscito da un sogno — e che per tre giorni diventerà il tuo.</p>
+        <p>Concalma Island nasce da un'idea semplice e potente: riunire persone, musica, arte e natura in un posto dove tutto il superfluo scompare. Dal 1 al 3 maggio 2026, quest'isola si trasforma in un'esperienza che non troverai da nessun'altra parte. Non è un festival nel senso classico. È un viaggio. Un mix esclusivo di creatività, sapori e suoni che prende forma attraverso ciò che ci rappresenta davvero: le persone che amiamo, i creativi che ammiriamo, gli amici che ci ispirano.</p>
+        <p>Sette artisti tra DJ set, live performance e live painting porteranno la loro energia sull'isola. Ma Concalma è molto di più della musica. La mattina ti svegli con il profumo del pane appena sfornato all'Antico Forno Aiello. Poi scegli: trekking sui sentieri panoramici con Trekk'amo Nature Club, yoga al tramonto con vista sul mare aperto, o un'uscita in barca a vela con la Lega Navale di Ventotene. A pranzo, street food tra i vicoli del borgo. La sera, cena in un ristorante affacciato sul porto romano. E poi la notte: dieci ore di musica no-stop a Le Parracine, l'anfiteatro naturale dell'isola, seguite dall'opening party e dall'afterparty esclusivo al Il Gabbiano.</p>
+        <p>Non è solo musica. Non è solo cibo. Non è solo arte. Non è solo un'isola. È tre giorni di pura magia dove tutto il resto scompare e rimane solo quello che conta davvero: il suono, il mare, le persone intorno a te e la sensazione di essere esattamente dove dovresti essere.</p>
         <p><strong>Line-up:</strong> Eternal Love, Giuliano Lomonte, Fabrizio Sala, Cianfo, Andrea D'Angeli, Iole e Gemello (live painting). Pacchetti a partire da €49,90. Posti strettamente limitati.</p>
       </div>
     </section>
@@ -244,21 +312,21 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
       <h2 class="section__title">PROGRAMMA</h2>
       <div class="programme">
         <div class="programme__day">
-          <h3 class="programme__day-title">Day 1 — Venerdì 1 Maggio</h3>
+          <h3 class="programme__day-title">Giorno 1 — Venerdì 1 Maggio</h3>
           <div class="programme__item"><span class="programme__time">14.00</span><span class="programme__event">HOTEL CHECK-IN</span></div>
           <div class="programme__item"><span class="programme__time">17.00</span><span class="programme__event">OPENING PARTY <a href="https://www.instagram.com/il_gabbiano_ventotene/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@IL GABBIANO</a></span></div>
           <div class="programme__item"><span class="programme__time">20.30</span><span class="programme__event">CONCALMA "MENU" <a href="https://www.instagram.com/lacambusa.ventotene/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@LA CAMBUSA</a></span></div>
           <div class="programme__item"><span class="programme__time">23.30</span><span class="programme__event"><span class="programme__highlight">AFTER PARTY <a href="https://www.instagram.com/il_gabbiano_ventotene/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@IL GABBIANO</a></span></span></div>
         </div>
         <div class="programme__day">
-          <h3 class="programme__day-title">Day 2 — Sabato 2 Maggio</h3>
+          <h3 class="programme__day-title">Giorno 2 — Sabato 2 Maggio</h3>
           <div class="programme__item"><span class="programme__time">09.00</span><span class="programme__event">"BREAKFAST MENU" <a href="https://www.instagram.com/antico.forno_aiello/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@ANTICO FORNO AIELLO</a></span></div>
           <div class="programme__item"><span class="programme__time">11.00</span><span class="programme__event">TREKKING W/ <a href="https://www.instagram.com/trekkamo.natureclub/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@TREKKAMO.NATURECLUB</a> / YOGA W/ <a href="https://www.instagram.com/ilaryamariani/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@ILARYAMARIANI</a> / SAILING W/ <a href="https://www.instagram.com/leganavaleventotene/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@LEGANAVALEVENTOTENE</a></span></div>
           <div class="programme__item"><span class="programme__time">13.00</span><span class="programme__event">STREET FOOD "LUNCH MENU"</span></div>
           <div class="programme__item"><span class="programme__time">15.00</span><span class="programme__event"><span class="programme__highlight">ISLAND "10 HOURS" <a href="https://www.instagram.com/leparracine/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@LE PARRACINE</a></span></span></div>
         </div>
         <div class="programme__day">
-          <h3 class="programme__day-title">Day 3 — Domenica 3 Maggio</h3>
+          <h3 class="programme__day-title">Giorno 3 — Domenica 3 Maggio</h3>
           <div class="programme__item"><span class="programme__time">10.00</span><span class="programme__event">CONCALMA "BRUNCH MENU"</span></div>
           <div class="programme__item"><span class="programme__time">14.00</span><span class="programme__event">HOTEL CHECK-OUT</span></div>
         </div>
@@ -270,28 +338,33 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
       <h2 class="section__title">ISLAND "10 HOURS" <a href="https://www.instagram.com/leparracine/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@LE PARRACINE</a></h2>
       <p style="text-align:center;font-size:.85rem;opacity:.8;text-transform:uppercase;letter-spacing:2px;font-weight:700;margin-bottom:2rem">Sabato 2 Maggio · Dalle 15:00 all'01:00</p>
       <div style="max-width:800px;margin:0 auto">
-        <p style="font-size:1rem;line-height:1.8;text-transform:none;font-weight:400;margin-bottom:2rem;text-align:justify;opacity:.9">Dieci ore di musica no-stop nel cuore di Ventotene, a Le Parracine — anfiteatro naturale di tufo affacciato sul Tirreno. Un palco, sei DJ, un live painter, due chioschi e un'area chill con vista mare. Dalle prime luci del pomeriggio fino a notte fonda.</p>
+        <p style="font-size:1rem;line-height:1.9;text-transform:none;font-weight:400;margin-bottom:2rem;text-align:justify;opacity:.9">Dieci ore di musica no-stop nel cuore di Ventotene. Le Parracine è un anfiteatro naturale scavato nel tufo vulcanico, affacciato direttamente sul Mar Tirreno — un palco che nessun designer avrebbe potuto immaginare meglio. Qui, sabato 2 maggio, sei DJ si alterneranno dalle prime luci del pomeriggio fino a notte fonda, mentre Gemello dipinge dal vivo tela dopo tela seguendo il ritmo. Due chioschi, un'area chill con amache e cuscini vista mare, e quella luce dorata che solo le isole sanno dare. Non è un evento: è il momento in cui capisci perché sei venuto a Ventotene.</p>
 
-        <h3 style="font-size:1rem;margin-bottom:1rem;letter-spacing:2px">I DJ</h3>
-        <div style="display:flex;flex-direction:column;gap:.4rem;margin-bottom:2rem;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;align-items:center">
-          <span><a href="https://www.instagram.com/eternallovechannel/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">Eternal Love</a> — Electronic / Deep House</span>
-          <span><a href="https://www.instagram.com/giuliano_lomonte/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">Giuliano Lomonte</a> — House</span>
-          <span><a href="https://www.instagram.com/fabriziosala___/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">Fabrizio Sala</a> — Afro House</span>
-          <span><a href="https://www.instagram.com/iolepisoni/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">Iole</a> — Live / Vocal / Electronic</span>
-          <span><a href="https://www.instagram.com/andreadangeli_/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">Andrea D'Angeli</a> — Indie Dance</span>
-          <span><a href="https://www.instagram.com/__cianfo/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">Cianfo</a> — Tech House</span>
+        <h3 style="font-size:1rem;margin-bottom:1.5rem;letter-spacing:2px;text-align:center">I DJ</h3>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-bottom:2.5rem;max-width:700px;margin-left:auto;margin-right:auto">
+          <a href="https://www.instagram.com/eternallovechannel/" target="_blank" rel="noopener noreferrer" style="display:block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:1rem;text-align:center;transition:all .3s;text-decoration:none;color:inherit"><span style="display:block;font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:.3rem">Eternal Love</span><span style="display:block;font-size:.6rem;font-weight:500;opacity:.6;text-transform:uppercase;letter-spacing:1px">Electronic / Deep House</span></a>
+          <a href="https://www.instagram.com/giuliano_lomonte/" target="_blank" rel="noopener noreferrer" style="display:block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:1rem;text-align:center;transition:all .3s;text-decoration:none;color:inherit"><span style="display:block;font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:.3rem">Giuliano Lomonte</span><span style="display:block;font-size:.6rem;font-weight:500;opacity:.6;text-transform:uppercase;letter-spacing:1px">House</span></a>
+          <a href="https://www.instagram.com/fabriziosala___/" target="_blank" rel="noopener noreferrer" style="display:block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:1rem;text-align:center;transition:all .3s;text-decoration:none;color:inherit"><span style="display:block;font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:.3rem">Fabrizio Sala</span><span style="display:block;font-size:.6rem;font-weight:500;opacity:.6;text-transform:uppercase;letter-spacing:1px">Afro House</span></a>
+          <a href="https://www.instagram.com/iolepisoni/" target="_blank" rel="noopener noreferrer" style="display:block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:1rem;text-align:center;transition:all .3s;text-decoration:none;color:inherit"><span style="display:block;font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:.3rem">Iole</span><span style="display:block;font-size:.6rem;font-weight:500;opacity:.6;text-transform:uppercase;letter-spacing:1px">Live / Vocal / Electronic</span></a>
+          <a href="https://www.instagram.com/andreadangeli_/" target="_blank" rel="noopener noreferrer" style="display:block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:1rem;text-align:center;transition:all .3s;text-decoration:none;color:inherit"><span style="display:block;font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:.3rem">Andrea D'Angeli</span><span style="display:block;font-size:.6rem;font-weight:500;opacity:.6;text-transform:uppercase;letter-spacing:1px">Indie Dance</span></a>
+          <a href="https://www.instagram.com/__cianfo/" target="_blank" rel="noopener noreferrer" style="display:block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:1rem;text-align:center;transition:all .3s;text-decoration:none;color:inherit"><span style="display:block;font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:.3rem">Cianfo</span><span style="display:block;font-size:.6rem;font-weight:500;opacity:.6;text-transform:uppercase;letter-spacing:1px">Tech House</span></a>
         </div>
 
-        <h3 style="font-size:1rem;margin-bottom:1rem;letter-spacing:2px">LIVE PAINTING</h3>
-        <p style="font-size:.9rem;line-height:1.7;text-transform:none;font-weight:400;margin-bottom:2rem;opacity:.9;text-align:justify"><a href="https://www.instagram.com/gemelloofficial/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@gemelloofficial</a> — Gemello dipinge dal vivo seguendo il ritmo della musica, creando opere uniche durante tutta la durata dell'evento. L'arte prende forma in tempo reale, tela dopo tela, set dopo set.</p>
-
-        <h3 style="font-size:1rem;margin-bottom:1rem;letter-spacing:2px">CHILL AREA</h3>
-        <p style="font-size:.9rem;line-height:1.7;text-transform:none;font-weight:400;margin-bottom:2rem;opacity:.9;text-align:justify">Uno spazio dedicato al relax tra un set e l'altro. Amache, cuscini e luci soffuse con vista mare aperto. Il posto perfetto per ricaricarsi, chiacchierare con gli altri e lasciarsi cullare dalla brezza dell'isola mentre la musica continua a fare da colonna sonora in sottofondo. Nessuna fretta, nessun caos — solo il ritmo giusto.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">
+          <div style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:1.5rem">
+            <h3 style="font-size:.9rem;margin-bottom:.8rem;letter-spacing:2px">LIVE PAINTING</h3>
+            <p style="font-size:.85rem;line-height:1.8;text-transform:none;font-weight:400;opacity:.85;text-align:justify"><a href="https://www.instagram.com/gemelloofficial/" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;color:inherit">@gemelloofficial</a> — Mentre i DJ costruiscono il suono, Gemello costruisce l'immagine. Pennello in mano, tela bianca, e il ritmo che guida ogni tratto. Le sue opere nascono in tempo reale e raccontano quello che le parole non possono: l'energia di un momento irripetibile. Ogni tela è unica, ogni set un capitolo nuovo.</p>
+          </div>
+          <div style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:1.5rem">
+            <h3 style="font-size:.9rem;margin-bottom:.8rem;letter-spacing:2px">CHILL AREA</h3>
+            <p style="font-size:.85rem;line-height:1.8;text-transform:none;font-weight:400;opacity:.85;text-align:justify">A pochi passi dal palco, dove il volume si abbassa e la brezza del Tirreno prende il sopravvento. Amache tese tra i pali, cuscini sparsi sulla pietra, luci calde che si accendono al tramonto e il mare aperto come unico orizzonte. La musica arriva in sottofondo, morbida. Nessuna fretta, nessun caos — solo il ritmo giusto.</p>
+          </div>
+        </div>
 
       </div>
     </section>
 
-    <section class="quote"><p class="quote__text">"Concalma a Ventotene è il momento in cui la nostra visione prende forma, attraverso tutto ciò che ci rappresenta davvero: persone, creativi, amici. Racchiuso in tre giorni di pura magia."</p></section>
+    <section class="quote"><p class="quote__text">"Concalma non è un evento. È il momento in cui la nostra visione prende forma — attraverso le persone che amiamo, i creativi che ammiriamo, gli amici che ci ispirano. Tre giorni su un'isola dove il mondo si ferma e rimane solo quello che conta. Questo è Concalma. Questo è Ventotene."</p></section>
     <section class="section--blue">
       <h2 class="section__title">STATO PRENOTAZIONI</h2>
       <div class="booking-status">
@@ -311,12 +384,12 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
     </section>
     <section class="section--blue" style="margin-top:60px;margin-bottom:60px">
       <h2 class="section__title">I NOSTRI PARTNER</h2>
-      <p style="text-align:center;font-size:.9rem;opacity:.8;max-width:600px;margin:0 auto 3rem;text-transform:none;font-weight:400;line-height:1.7">Concalma Island è resa possibile grazie a chi condivide la nostra visione. Brand, realtà e persone che credono nella stessa energia.</p>
+      <p style="text-align:center;font-size:.9rem;opacity:.8;max-width:600px;margin:0 auto 3rem;text-transform:none;font-weight:400;line-height:1.7">Concalma Island non sarebbe possibile senza chi crede nella nostra stessa visione. Brand, realtà locali e persone che condividono la nostra energia e il nostro modo di vivere. Insieme, trasformiamo un'idea in qualcosa di reale.</p>
       <div class="partners-grid">
-        <div class="partner"><p class="partner__label" style="color:rgba(255,255,255,.6)">Fashion Partner</p><a href="https://adomred.com/" target="_blank" rel="noopener"><img class="partner__logo" src="https://i0.wp.com/concalma.cloud/wp-content/uploads/2026/03/logo_adom_2.webp?ssl=1" alt="Adom" loading="lazy" style="filter:brightness(0) invert(1);height:60px"></a><p class="partner__name">ADOM</p></div>
-        <div class="partner"><p class="partner__label" style="color:rgba(255,255,255,.6)">Outdoor Partner</p><a href="https://www.trekkamo.com/" target="_blank" rel="noopener"><img class="partner__logo" src="https://i0.wp.com/concalma.cloud/wp-content/uploads/2026/03/logobianco.png?ssl=1" alt="Trekk'amo" loading="lazy" style="filter:brightness(0) invert(1);height:60px"></a><p class="partner__name">TREKK'AMO</p></div>
-        <div class="partner"><p class="partner__label" style="color:rgba(255,255,255,.6)">Media Partner</p><a href="https://www.6-floor.it/" target="_blank" rel="noopener"><img class="partner__logo" src="https://i0.wp.com/concalma.cloud/wp-content/uploads/2026/03/a98743_9f6ab5a6451a470fb4c9841c31f5849cmv2.png?ssl=1" alt="6ix Floor" loading="lazy" style="filter:brightness(0) invert(1);height:60px"></a><p class="partner__name">6IX FLOOR</p></div>
-        <div class="partner"><p class="partner__label" style="color:rgba(255,255,255,.6)">Beverage Partner</p><a href="https://www.camparisoda.it/" target="_blank" rel="noopener"><img class="partner__logo" src="https://concalma.cloud/wp-content/uploads/2026/03/campari-soda.png" alt="Campari Soda" loading="lazy" style="filter:brightness(0) invert(1);height:60px"></a><p class="partner__name">CAMPARI SODA</p></div>
+        <div class="partner"><p class="partner__label" style="color:rgba(255,255,255,.6)">Fashion Partner</p><a href="https://adomred.com/" target="_blank" rel="noopener noreferrer"><img class="partner__logo" src="https://i0.wp.com/concalma.cloud/wp-content/uploads/2026/03/logo_adom_2.webp?ssl=1" alt="Adom" loading="lazy" style="filter:brightness(0) invert(1);height:60px"></a><p class="partner__name">ADOM</p></div>
+        <div class="partner"><p class="partner__label" style="color:rgba(255,255,255,.6)">Outdoor Partner</p><a href="https://www.trekkamo.com/" target="_blank" rel="noopener noreferrer"><img class="partner__logo" src="https://i0.wp.com/concalma.cloud/wp-content/uploads/2026/03/logobianco.png?ssl=1" alt="Trekk'amo" loading="lazy" style="filter:brightness(0) invert(1);height:60px"></a><p class="partner__name">TREKK'AMO</p></div>
+        <div class="partner"><p class="partner__label" style="color:rgba(255,255,255,.6)">Media Partner</p><a href="https://www.6-floor.it/" target="_blank" rel="noopener noreferrer"><img class="partner__logo" src="https://i0.wp.com/concalma.cloud/wp-content/uploads/2026/03/a98743_9f6ab5a6451a470fb4c9841c31f5849cmv2.png?ssl=1" alt="6ix Floor" loading="lazy" style="filter:brightness(0) invert(1);height:60px"></a><p class="partner__name">6IX FLOOR</p></div>
+        <div class="partner"><p class="partner__label" style="color:rgba(255,255,255,.6)">Beverage Partner</p><a href="https://www.camparisoda.it/" target="_blank" rel="noopener noreferrer"><img class="partner__logo" src="https://concalma.cloud/wp-content/uploads/2026/03/campari-soda.png" alt="Campari Soda" loading="lazy" style="filter:brightness(0) invert(1);height:60px"></a><p class="partner__name">CAMPARI SODA</p></div>
       </div>
     </section>
     <section class="section--blue">
@@ -330,25 +403,25 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
       </div>
     </section>
     <section class="social-links">
-      <a href="https://www.instagram.com/cconcalma_/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.instagram.com/cconcalma_/" target="_blank" rel="noopener noreferrer">Instagram</a>
       <a href="mailto:info@concalma.cloud">Mail</a>
-      <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener noreferrer">WhatsApp</a>
     </section>
   </div>
 
   <!-- ====================== ARTISTS ====================== -->
   <div class="page" id="page-artists">
     <section class="section" style="padding-top:120px">
-      <h1 class="section__title">LINEUP</h1>
-      <p class="section__subtitle">Sette anime creative che daranno voce, suono e colore a tre giorni indimenticabili sull'isola.</p>
+      <h2 class="section__title">LINEUP</h2>
+      <p class="section__subtitle">Sette artisti. Sette visioni. Sette modi diversi di trasformare un'isola in qualcosa che non dimenticherai. DJ set, live performance e live painting: ecco chi darà voce, suono e colore ai tre giorni più intensi dell'anno.</p>
       <div class="artists-grid">
-        <div class="artist-card"><img class="artist-card__img" src="https://images.unsplash.com/photo-1571266028243-d220e964ab2e?w=600&h=600&fit=crop" alt="Eternal Love dj set deep house festival Ventotene 2026" loading="lazy"><div class="artist-card__body"><h2 class="artist-card__name">Eternal Love</h2><p class="artist-card__genre">Electronic · Deep House</p><p class="artist-card__bio">Un viaggio sonoro tra beat profondi e melodie eteree. Eternal Love trasforma ogni set in un rituale collettivo.</p><div class="artist-card__links"><a href="https://www.instagram.com/eternallovechannel/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
-        <div class="artist-card"><img class="artist-card__img" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=600&fit=crop" alt="Giuliano Lomonte dj set house music Concalma Island" loading="lazy"><div class="artist-card__body"><h2 class="artist-card__name">Giuliano Lomonte</h2><p class="artist-card__genre">DJ Set · House</p><p class="artist-card__bio">Selezione musicale raffinata che spazia dal funky al disco, passando per house vibes che fanno muovere senza pensare.</p><div class="artist-card__links"><a href="https://www.instagram.com/giuliano_lomonte/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
-        <div class="artist-card"><img class="artist-card__img" src="https://images.unsplash.com/photo-1508854710579-5cecc3a9ff17?w=600&h=600&fit=crop" alt="Fabrizio Sala dj set afro house festival isola" loading="lazy"><div class="artist-card__body"><h2 class="artist-card__name">Fabrizio Sala</h2><p class="artist-card__genre">DJ Set · Afro House</p><p class="artist-card__bio">Sonorità calde e ritmi tribali incontrano la produzione contemporanea. I suoi set sono un tramonto che dura tutta la notte.</p><div class="artist-card__links"><a href="https://www.instagram.com/fabriziosala___/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
-        <div class="artist-card"><img class="artist-card__img" src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=600&h=600&fit=crop" alt="Iole live vocal electronic Concalma Island 2026" loading="lazy"><div class="artist-card__body"><h2 class="artist-card__name">Iole</h2><p class="artist-card__genre">Live · Vocal · Electronic</p><p class="artist-card__bio">Voce e produzione si fondono in performance ipnotiche. Iole crea paesaggi sonori tra il sogno e la realtà.</p><div class="artist-card__links"><a href="https://www.instagram.com/iolepisoni/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
-        <div class="artist-card"><img class="artist-card__img" src="https://images.unsplash.com/photo-1460667262436-cf19894f4774?w=600&h=600&fit=crop" alt="Andrea D'Angeli dj set indie dance festival outdoor" loading="lazy"><div class="artist-card__body"><h2 class="artist-card__name">Andrea D'Angeli</h2><p class="artist-card__genre">DJ Set · Indie Dance</p><p class="artist-card__bio">Un selezionatore che racconta storie attraverso la musica. Ogni traccia è una pagina di un romanzo che non vuoi finisca.</p><div class="artist-card__links"><a href="https://www.instagram.com/andreadangeli_/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
-        <div class="artist-card"><img class="artist-card__img" src="https://images.unsplash.com/photo-1545959570-a94084071b5d?w=600&h=600&fit=crop" alt="Cianfo dj set tech house Concalma Ventotene" loading="lazy"><div class="artist-card__body"><h2 class="artist-card__name">Cianfo</h2><p class="artist-card__genre">DJ Set · Tech House</p><p class="artist-card__bio">Energia pura dietro la console. Cianfo porta un'attitudine da club che si fonde con l'atmosfera open-air dell'isola.</p><div class="artist-card__links"><a href="https://www.instagram.com/__cianfo/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
-        <div class="artist-card"><img class="artist-card__img" src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&h=600&fit=crop" alt="Gemello live painting visual art festival Ventotene" loading="lazy"><div class="artist-card__body"><h2 class="artist-card__name">Gemello</h2><p class="artist-card__genre">Live Painting · Visual Art</p><p class="artist-card__bio">L'arte prende forma in tempo reale. Gemello dipinge dal vivo seguendo il ritmo della musica.</p><div class="artist-card__links"><a href="https://www.instagram.com/gemelloofficial/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
+        <div class="artist-card"><img class="artist-card__img" width="600" height="600" src="https://images.unsplash.com/photo-1571266028243-d220e964ab2e?w=600&h=600&fit=crop" alt="Eternal Love dj set deep house festival Ventotene 2026" loading="lazy"><div class="artist-card__body"><h3 class="artist-card__name">Eternal Love</h3><p class="artist-card__genre">Electronic · Deep House</p><p class="artist-card__bio">Un viaggio sonoro dove i beat profondi si intrecciano con melodie eteree e atmosfere oniriche. Ogni set di Eternal Love è un rituale collettivo — un'esperienza che ti avvolge lentamente e non ti lascia più andare. Perfetto per il tramonto a Ventotene.</p><div class="artist-card__links"><a href="https://www.instagram.com/eternallovechannel/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
+        <div class="artist-card"><img class="artist-card__img" width="600" height="600" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=600&fit=crop" alt="Giuliano Lomonte dj set house music Concalma Island" loading="lazy"><div class="artist-card__body"><h3 class="artist-card__name">Giuliano Lomonte</h3><p class="artist-card__genre">DJ Set · House</p><p class="artist-card__bio">Una selezione musicale di rara eleganza che attraversa funky, disco e house con naturalezza disarmante. Giuliano non mette dischi — racconta una storia. E quando la sua musica incontra la notte di Ventotene, il risultato è pura magia.</p><div class="artist-card__links"><a href="https://www.instagram.com/giuliano_lomonte/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
+        <div class="artist-card"><img class="artist-card__img" width="600" height="600" src="https://images.unsplash.com/photo-1508854710579-5cecc3a9ff17?w=600&h=600&fit=crop" alt="Fabrizio Sala dj set afro house festival isola" loading="lazy"><div class="artist-card__body"><h3 class="artist-card__name">Fabrizio Sala</h3><p class="artist-card__genre">DJ Set · Afro House</p><p class="artist-card__bio">Sonorità calde, ritmi tribali e una produzione contemporanea che ti porta dritto in un'altra dimensione. I set di Fabrizio sono come i tramonti di Ventotene: iniziano piano, ti avvolgono completamente, e quando finiscono vuoi che ricomincino subito.</p><div class="artist-card__links"><a href="https://www.instagram.com/fabriziosala___/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
+        <div class="artist-card"><img class="artist-card__img" width="600" height="600" src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=600&h=600&fit=crop" alt="Iole live vocal electronic Concalma Island 2026" loading="lazy"><div class="artist-card__body"><h3 class="artist-card__name">Iole</h3><p class="artist-card__genre">Live · Vocal · Electronic</p><p class="artist-card__bio">Quando la voce di Iole incontra la produzione elettronica, succede qualcosa di raro. Performance ipnotiche dove il suono diventa paesaggio e la realtà sfuma nel sogno. I suoi live sono tra le cose più emozionanti che vedrai a Concalma.</p><div class="artist-card__links"><a href="https://www.instagram.com/iolepisoni/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
+        <div class="artist-card"><img class="artist-card__img" width="600" height="600" src="https://images.unsplash.com/photo-1460667262436-cf19894f4774?w=600&h=600&fit=crop" alt="Andrea D'Angeli dj set indie dance festival outdoor" loading="lazy"><div class="artist-card__body"><h3 class="artist-card__name">Andrea D'Angeli</h3><p class="artist-card__genre">DJ Set · Indie Dance</p><p class="artist-card__bio">Andrea non seleziona tracce — racconta storie. Ogni canzone è una pagina, ogni transizione un colpo di scena. I suoi set hanno la struttura di un romanzo: un inizio che ti cattura, un centro che ti tiene sospeso e un finale che ti lascia con il fiato corto.</p><div class="artist-card__links"><a href="https://www.instagram.com/andreadangeli_/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
+        <div class="artist-card"><img class="artist-card__img" width="600" height="600" src="https://images.unsplash.com/photo-1545959570-a94084071b5d?w=600&h=600&fit=crop" alt="Cianfo dj set tech house Concalma Ventotene" loading="lazy"><div class="artist-card__body"><h3 class="artist-card__name">Cianfo</h3><p class="artist-card__genre">DJ Set · Tech House</p><p class="artist-card__bio">Energia pura, senza filtri. Cianfo porta un'attitudine da club che si fonde perfettamente con l'atmosfera open-air dell'isola. Quando sale in console, il volume sale con lui — e la pista non si svuota fino all'ultimo beat. Il suo tech house è la carica di adrenalina che Concalma merita.</p><div class="artist-card__links"><a href="https://www.instagram.com/__cianfo/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
+        <div class="artist-card"><img class="artist-card__img" width="600" height="600" src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600&h=600&fit=crop" alt="Gemello live painting visual art festival Ventotene" loading="lazy"><div class="artist-card__body"><h3 class="artist-card__name">Gemello</h3><p class="artist-card__genre">Live Painting · Visual Art</p><p class="artist-card__bio">Mentre la musica riempie l'aria, Gemello riempie le tele. Il suo live painting è un dialogo silenzioso con il suono — ogni pennellata segue il ritmo, ogni colore racconta un'emozione. Le opere che nascono durante Concalma saranno uniche e irripetibili, come l'evento stesso.</p><div class="artist-card__links"><a href="https://www.instagram.com/gemelloofficial/" target="_blank" rel="noopener" class="artist-card__link">Instagram</a></div></div></div>
       </div>
     </section>
   </div>
@@ -356,37 +429,37 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
   <!-- ====================== ACCOMMODATIONS ====================== -->
   <div class="page" id="page-accommodations">
     <section class="section" style="padding-top:120px">
-      <h1 class="section__title">DOVE DORMIRAI</h1>
-      <p class="section__subtitle">Ventotene è un'isola di appena 1,5 km², senza automobili, dove ogni struttura è a pochi passi dal mare e dai luoghi dell'evento.</p>
+      <h2 class="section__title">DOVE DORMIRAI</h2>
+      <p class="section__subtitle">Ventotene è un'isola di appena 1,5 km², dove le automobili non esistono e ogni struttura è a pochi minuti a piedi dal mare e dai luoghi dell'evento. Qui non servono taxi — servono solo un paio di scarpe comode e la voglia di perdersi tra i vicoli.</p>
       <div class="island-map">
         <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
           <rect width="800" height="400" fill="#f8f9ff" rx="16"/>
-          <path d="M95,210 C100,195 108,182 125,175 C135,171 142,168 155,162 C165,157 172,150 185,148 C200,145 218,140 235,138 C248,136 258,132 275,130 C295,127 310,124 330,122 C348,120 365,117 385,116 C405,115 425,113 445,112 C465,111 485,112 505,114 C525,116 540,118 555,122 C570,126 582,130 595,136 C610,143 622,150 632,160 C640,168 645,175 648,185 C650,192 648,200 644,208 C638,218 630,226 618,232 C605,238 590,242 575,244 C558,246 540,248 520,250 C498,252 475,254 452,255 C428,256 405,258 380,258 C355,258 330,257 305,254 C280,251 258,248 238,244 C218,240 200,236 185,230 C170,224 158,220 145,215 C132,210 118,208 108,210 C100,212 96,214 95,210 Z" fill="#f0f0f0" stroke="#111" stroke-width="2.5"/>
-          <path d="M145,215 C140,222 135,228 138,235 C142,240 150,238 155,232 C158,226 155,220 150,216" fill="#f0f0f0" stroke="#111" stroke-width="1.5"/>
-          <path d="M168,228 C162,235 158,245 164,252 C170,258 182,260 192,255 C200,250 202,242 196,234" fill="#dde4ff" stroke="#111" stroke-width="2"/>
+          <path d="M95,210 C100,195 108,182 125,175 C135,171 142,168 155,162 C165,157 172,150 185,148 C200,145 218,140 235,138 C248,136 258,132 275,130 C295,127 310,124 330,122 C348,120 365,117 385,116 C405,115 425,113 445,112 C465,111 485,112 505,114 C525,116 540,118 555,122 C570,126 582,130 595,136 C610,143 622,150 632,160 C640,168 645,175 648,185 C650,192 648,200 644,208 C638,218 630,226 618,232 C605,238 590,242 575,244 C558,246 540,248 520,250 C498,252 475,254 452,255 C428,256 405,258 380,258 C355,258 330,257 305,254 C280,251 258,248 238,244 C218,240 200,236 185,230 C170,224 158,220 145,215 C132,210 118,208 108,210 C100,212 96,214 95,210 Z" fill="#f0f0f0" stroke="#1E1E1E" stroke-width="2.5"/>
+          <path d="M145,215 C140,222 135,228 138,235 C142,240 150,238 155,232 C158,226 155,220 150,216" fill="#f0f0f0" stroke="#1E1E1E" stroke-width="1.5"/>
+          <path d="M168,228 C162,235 158,245 164,252 C170,258 182,260 192,255 C200,250 202,242 196,234" fill="#dde4ff" stroke="#1E1E1E" stroke-width="2"/>
           <text x="180" y="270" text-anchor="middle" fill="#666" font-size="7" font-weight="700" font-family="Helvetica,Arial,sans-serif">PORTO ROMANO</text>
-          <path d="M270,130 C265,122 262,115 268,110 C275,106 285,108 290,114 C294,120 290,126 284,130" fill="#dde4ff" stroke="#111" stroke-width="1.5"/>
+          <path d="M270,130 C265,122 262,115 268,110 C275,106 285,108 290,114 C294,120 290,126 284,130" fill="#dde4ff" stroke="#1E1E1E" stroke-width="1.5"/>
           <text x="278" y="105" text-anchor="middle" fill="#666" font-size="7" font-weight="700" font-family="Helvetica,Arial,sans-serif">PORTO NUOVO</text>
-          <path d="M560,244 C555,252 558,260 565,262 C572,262 578,256 575,248" fill="#f0f0f0" stroke="#111" stroke-width="1.5"/>
+          <path d="M560,244 C555,252 558,260 565,262 C572,262 578,256 575,248" fill="#f0f0f0" stroke="#1E1E1E" stroke-width="1.5"/>
           <text x="567" y="275" text-anchor="middle" fill="#666" font-size="7" font-weight="700" font-family="Helvetica,Arial,sans-serif">CALA NAVE</text>
           <text x="655" y="175" fill="#666" font-size="7" font-weight="700" font-family="Helvetica,Arial,sans-serif">PUNTA EOLO</text>
           <path d="M160,200 C200,185 260,170 330,160 C400,150 470,148 540,155 C580,160 610,168 635,178" fill="none" stroke="#ccc" stroke-width="1.5" stroke-dasharray="6,4"/>
           <path d="M230,178 C225,190 215,205 200,220" fill="none" stroke="#ccc" stroke-width="1" stroke-dasharray="4,3"/>
-          <ellipse cx="720" cy="280" rx="35" ry="25" fill="#f0f0f0" stroke="#111" stroke-width="1.5"/>
+          <ellipse cx="720" cy="280" rx="35" ry="25" fill="#f0f0f0" stroke="#1E1E1E" stroke-width="1.5"/>
           <text x="720" y="284" text-anchor="middle" fill="#999" font-size="7" font-weight="700" font-family="Helvetica,Arial,sans-serif">S. STEFANO</text>
-          <circle cx="570" cy="145" r="11" fill="#111" stroke="#fff" stroke-width="2"/><text x="570" y="149" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">1</text>
-          <circle cx="290" cy="145" r="11" fill="#111" stroke="#fff" stroke-width="2"/><text x="290" y="149" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">2</text>
-          <circle cx="380" cy="135" r="11" fill="#111" stroke="#fff" stroke-width="2"/><text x="380" y="139" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">3</text>
-          <circle cx="490" cy="125" r="11" fill="#111" stroke="#fff" stroke-width="2"/><text x="490" y="129" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">4</text>
-          <circle cx="240" cy="165" r="11" fill="#111" stroke="#fff" stroke-width="2"/><text x="240" y="169" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">5</text>
-          <circle cx="620" cy="170" r="11" fill="#111" stroke="#fff" stroke-width="2"/><text x="620" y="174" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">6</text>
-          <circle cx="190" cy="225" r="11" fill="#111" stroke="#fff" stroke-width="2"/><text x="190" y="229" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">7</text>
-          <polygon points="430,190 434,200 445,202 437,208 439,219 430,213 421,219 423,208 415,202 426,200" fill="#1400FF" stroke="#fff" stroke-width="1.5"/>
-          <text x="430" y="232" text-anchor="middle" fill="#1400FF" font-size="8" font-weight="900" font-family="Helvetica,Arial,sans-serif">LE PARRACINE</text>
-          <polygon points="155,175 159,185 170,187 162,193 164,204 155,198 146,204 148,193 140,187 151,185" fill="#1400FF" stroke="#fff" stroke-width="1.5"/>
-          <text x="155" y="155" text-anchor="middle" fill="#1400FF" font-size="8" font-weight="900" font-family="Helvetica,Arial,sans-serif">IL GABBIANO</text>
-          <circle cx="210" cy="240" r="5" fill="#1400FF" stroke="#fff" stroke-width="1"/><text x="210" y="255" text-anchor="middle" fill="#1400FF" font-size="6" font-weight="700" font-family="Helvetica,Arial,sans-serif">LA CAMBUSA</text>
-          <circle cx="260" cy="180" r="5" fill="#1400FF" stroke="#fff" stroke-width="1"/><text x="260" y="194" text-anchor="middle" fill="#1400FF" font-size="6" font-weight="700" font-family="Helvetica,Arial,sans-serif">FORNO AIELLO</text>
+          <circle cx="570" cy="145" r="11" fill="#1E1E1E" stroke="#fff" stroke-width="2"/><text x="570" y="149" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">1</text>
+          <circle cx="290" cy="145" r="11" fill="#1E1E1E" stroke="#fff" stroke-width="2"/><text x="290" y="149" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">2</text>
+          <circle cx="380" cy="135" r="11" fill="#1E1E1E" stroke="#fff" stroke-width="2"/><text x="380" y="139" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">3</text>
+          <circle cx="490" cy="125" r="11" fill="#1E1E1E" stroke="#fff" stroke-width="2"/><text x="490" y="129" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">4</text>
+          <circle cx="240" cy="165" r="11" fill="#1E1E1E" stroke="#fff" stroke-width="2"/><text x="240" y="169" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">5</text>
+          <circle cx="620" cy="170" r="11" fill="#1E1E1E" stroke="#fff" stroke-width="2"/><text x="620" y="174" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">6</text>
+          <circle cx="190" cy="225" r="11" fill="#1E1E1E" stroke="#fff" stroke-width="2"/><text x="190" y="229" text-anchor="middle" fill="#fff" font-size="10" font-weight="900" font-family="Helvetica,Arial,sans-serif">7</text>
+          <polygon points="430,190 434,200 445,202 437,208 439,219 430,213 421,219 423,208 415,202 426,200" fill="#0000CC" stroke="#fff" stroke-width="1.5"/>
+          <text x="430" y="232" text-anchor="middle" fill="#0000CC" font-size="8" font-weight="900" font-family="Helvetica,Arial,sans-serif">LE PARRACINE</text>
+          <polygon points="155,175 159,185 170,187 162,193 164,204 155,198 146,204 148,193 140,187 151,185" fill="#0000CC" stroke="#fff" stroke-width="1.5"/>
+          <text x="155" y="155" text-anchor="middle" fill="#0000CC" font-size="8" font-weight="900" font-family="Helvetica,Arial,sans-serif">IL GABBIANO</text>
+          <circle cx="210" cy="240" r="5" fill="#0000CC" stroke="#fff" stroke-width="1"/><text x="210" y="255" text-anchor="middle" fill="#0000CC" font-size="6" font-weight="700" font-family="Helvetica,Arial,sans-serif">LA CAMBUSA</text>
+          <circle cx="260" cy="180" r="5" fill="#0000CC" stroke="#fff" stroke-width="1"/><text x="260" y="194" text-anchor="middle" fill="#0000CC" font-size="6" font-weight="700" font-family="Helvetica,Arial,sans-serif">FORNO AIELLO</text>
           <text x="400" y="340" text-anchor="middle" fill="#bbc" font-size="12" font-weight="800" font-family="Helvetica,Arial,sans-serif" letter-spacing="8">MAR TIRRENO</text>
           <text x="50" y="50" text-anchor="middle" fill="#ccc" font-size="14" font-weight="900" font-family="Helvetica,Arial,sans-serif">N</text>
           <line x1="50" y1="55" x2="50" y2="75" stroke="#ccc" stroke-width="1.5"/><polygon points="50,55 46,62 54,62" fill="#ccc"/>
@@ -399,13 +472,13 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
         </div>
       </div>
       <div class="accom-grid">
-        <div class="accom-card"><img class="accom-card__img" src="https://i0.wp.com/borgo-cacciatori.hotels-lazio.com/data/Photos/OriginalPhoto/11362/1136269/1136269075/hotel-borgo-cacciatori-ventotene-photo-6.JPEG?ssl=1" alt="Borgo Cacciatori hotel Ventotene vista mare" loading="lazy"><div class="accom-card__body"><h2 class="accom-card__name">1. Borgo Cacciatori</h2><p class="accom-card__type">Hotel · Vista mare</p><p class="accom-card__desc">Struttura storica immersa nel verde con vista panoramica sull'isola di Santo Stefano.</p><div class="accom-card__tags"><span class="accom-card__tag">Vista mare</span><span class="accom-card__tag">Terrazza</span><span class="accom-card__tag">Tranquillità</span></div></div></div>
-        <div class="accom-card"><img class="accom-card__img" src="https://i0.wp.com/dynamic-media-cdn.tripadvisor.com/media/photo-o/17/bd/34/b2/beautiful-gardens-with.jpg?ssl=1" alt="Hotel Belvedere Ventotene porto romano" loading="lazy"><div class="accom-card__body"><h2 class="accom-card__name">2. Hotel Belvedere</h2><p class="accom-card__type">Hotel · Centro borgo</p><p class="accom-card__desc">Posizione strategica nel cuore del borgo antico. Affacci sul porto romano.</p><div class="accom-card__tags"><span class="accom-card__tag">Centrale</span><span class="accom-card__tag">Giardino</span><span class="accom-card__tag">Porto romano</span></div></div></div>
-        <div class="accom-card"><img class="accom-card__img" src="https://i0.wp.com/dynamic-media-cdn.tripadvisor.com/media/photo-o/29/c5/50/0e/caption.jpg?ssl=1" alt="Eolo Casa Vacanze" loading="lazy"><div class="accom-card__body"><h2 class="accom-card__name">3. Eolo Casa Vacanze</h2><p class="accom-card__type">Appartamento · Gruppi</p><p class="accom-card__desc">Appartamenti moderni e spaziosi, ideali per gruppi di amici.</p><div class="accom-card__tags"><span class="accom-card__tag">Gruppi</span><span class="accom-card__tag">Cucina</span><span class="accom-card__tag">Moderno</span></div></div></div>
-        <div class="accom-card"><img class="accom-card__img" src="https://lh3.googleusercontent.com/p/AF1QipOZ88wHta9QtzuJuI_MYzlbM80h_dgNM60MY5JZ=s1360-w1360-h1020-rw" alt="Agricamping Cantogallo" loading="lazy"><div class="accom-card__body"><h2 class="accom-card__name">4. Agricamping Cantogallo</h2><p class="accom-card__type">Camping · Natura</p><p class="accom-card__desc">Esperienza eco-friendly nella macchia mediterranea.</p><div class="accom-card__tags"><span class="accom-card__tag">Eco-friendly</span><span class="accom-card__tag">Natura</span><span class="accom-card__tag">Essenziale</span></div></div></div>
-        <div class="accom-card"><img class="accom-card__img" src="https://i0.wp.com/concalma.cloud/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-27-at-10.56.03.jpeg?ssl=1" alt="Casa Olivi" loading="lazy"><div class="accom-card__body"><h2 class="accom-card__name">5. Casa Olivi</h2><p class="accom-card__type">B&B · Borgo storico</p><p class="accom-card__desc">Ospitalità autentica nel cuore pulsante di Ventotene.</p><div class="accom-card__tags"><span class="accom-card__tag">Autentico</span><span class="accom-card__tag">Borgo</span><span class="accom-card__tag">Accogliente</span></div></div></div>
-        <div class="accom-card"><img class="accom-card__img" src="https://i0.wp.com/www.selectedhomesitaly.com/immagini/middle/prop56633-1496318282.jpg?ssl=1" alt="Albergo La Vela" loading="lazy"><div class="accom-card__body"><h2 class="accom-card__name">6. Albergo La Vela</h2><p class="accom-card__type">Hotel · Silenzio</p><p class="accom-card__desc">Isolata e silenziosa, accesso a calette nascoste.</p><div class="accom-card__tags"><span class="accom-card__tag">Isolato</span><span class="accom-card__tag">Calette</span><span class="accom-card__tag">Silenzio</span></div></div></div>
-        <div class="accom-card"><img class="accom-card__img" src="https://i0.wp.com/images.squarespace-cdn.com/content/v1/623da04ccdb8b15a4840a776/9b5f3a1d-e795-47c0-a3ff-848c5edfe3de/camera-matrimoniale.jpg?ssl=1" alt="Foresteria Lega Navale" loading="lazy"><div class="accom-card__body"><h2 class="accom-card__name">7. Foresteria Lega Navale</h2><p class="accom-card__type">Foresteria · Porto</p><p class="accom-card__desc">Per amanti del mare, direttamente sul porto romano.</p><div class="accom-card__tags"><span class="accom-card__tag">Porto</span><span class="accom-card__tag">Mare</span><span class="accom-card__tag">Nautica</span></div></div></div>
+        <div class="accom-card"><img class="accom-card__img" width="800" height="500" src="https://i0.wp.com/borgo-cacciatori.hotels-lazio.com/data/Photos/OriginalPhoto/11362/1136269/1136269075/hotel-borgo-cacciatori-ventotene-photo-6.JPEG?ssl=1" alt="Borgo Cacciatori hotel Ventotene vista mare" loading="lazy"><div class="accom-card__body"><h3 class="accom-card__name">1. Borgo Cacciatori</h3><p class="accom-card__type">Hotel · Vista mare</p><p class="accom-card__desc">Una struttura storica immersa nel verde, dove ti svegli con la vista panoramica sull'isola di Santo Stefano e il profumo della macchia mediterranea che entra dalla finestra. Silenzio, luce e il mare come unico orizzonte.</p><div class="accom-card__tags"><span class="accom-card__tag">Vista mare</span><span class="accom-card__tag">Terrazza</span><span class="accom-card__tag">Tranquillità</span></div></div></div>
+        <div class="accom-card"><img class="accom-card__img" width="800" height="500" src="https://i0.wp.com/dynamic-media-cdn.tripadvisor.com/media/photo-o/17/bd/34/b2/beautiful-gardens-with.jpg?ssl=1" alt="Hotel Belvedere Ventotene porto romano" loading="lazy"><div class="accom-card__body"><h3 class="accom-card__name">2. Hotel Belvedere</h3><p class="accom-card__type">Hotel · Centro borgo</p><p class="accom-card__desc">Nel cuore del borgo antico, a due passi da tutto. Esci dalla porta e sei già tra i vicoli, i ristoranti e il porto romano. La posizione perfetta per chi vuole vivere l'isola senza perdersi nulla — dal primo caffè all'ultimo drink.</p><div class="accom-card__tags"><span class="accom-card__tag">Centrale</span><span class="accom-card__tag">Giardino</span><span class="accom-card__tag">Porto romano</span></div></div></div>
+        <div class="accom-card"><img class="accom-card__img" width="800" height="500" src="https://i0.wp.com/dynamic-media-cdn.tripadvisor.com/media/photo-o/29/c5/50/0e/caption.jpg?ssl=1" alt="Eolo Casa Vacanze" loading="lazy"><div class="accom-card__body"><h3 class="accom-card__name">3. Eolo Casa Vacanze</h3><p class="accom-card__type">Appartamento · Gruppi</p><p class="accom-card__desc">Appartamenti moderni e spaziosi, pensati per chi arriva con la propria crew. Cucina attrezzata, spazi comuni dove continuare la serata e la libertà di vivere Concalma al proprio ritmo. Ideale per gruppi di amici che vogliono sentirsi a casa — ma su un'isola.</p><div class="accom-card__tags"><span class="accom-card__tag">Gruppi</span><span class="accom-card__tag">Cucina</span><span class="accom-card__tag">Moderno</span></div></div></div>
+        <div class="accom-card"><img class="accom-card__img" width="800" height="500" src="https://lh3.googleusercontent.com/p/AF1QipOZ88wHta9QtzuJuI_MYzlbM80h_dgNM60MY5JZ=s1360-w1360-h1020-rw" alt="Agricamping Cantogallo" loading="lazy"><div class="accom-card__body"><h3 class="accom-card__name">4. Agricamping Cantogallo</h3><p class="accom-card__type">Camping · Natura</p><p class="accom-card__desc">Per chi vuole vivere Ventotene nel modo più autentico possibile. Tenda nella macchia mediterranea, stelle sopra la testa e il suono del mare come sveglia naturale. Un'esperienza eco-friendly ed essenziale — esattamente lo spirito di Concalma.</p><div class="accom-card__tags"><span class="accom-card__tag">Eco-friendly</span><span class="accom-card__tag">Natura</span><span class="accom-card__tag">Essenziale</span></div></div></div>
+        <div class="accom-card"><img class="accom-card__img" width="800" height="500" src="https://i0.wp.com/concalma.cloud/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-27-at-10.56.03.jpeg?ssl=1" alt="Casa Olivi" loading="lazy"><div class="accom-card__body"><h3 class="accom-card__name">5. Casa Olivi</h3><p class="accom-card__type">B&B · Borgo storico</p><p class="accom-card__desc">Ospitalità vera, quella che solo le persone del posto sanno darti. Nel cuore pulsante del borgo, Casa Olivi è il posto dove ti senti accolto dal primo istante. Camere curate, colazione casalinga e la sensazione di essere parte dell'isola.</p><div class="accom-card__tags"><span class="accom-card__tag">Autentico</span><span class="accom-card__tag">Borgo</span><span class="accom-card__tag">Accogliente</span></div></div></div>
+        <div class="accom-card"><img class="accom-card__img" width="800" height="500" src="https://i0.wp.com/www.selectedhomesitaly.com/immagini/middle/prop56633-1496318282.jpg?ssl=1" alt="Albergo La Vela" loading="lazy"><div class="accom-card__body"><h3 class="accom-card__name">6. Albergo La Vela</h3><p class="accom-card__type">Hotel · Silenzio</p><p class="accom-card__desc">Per chi cerca il silenzio come lusso. La Vela è la struttura più appartata dell'isola, con accesso diretto a calette nascoste dove l'acqua è trasparente e il mondo sembra lontano. La mattina nuoti, il pomeriggio balli — l'equilibrio perfetto.</p><div class="accom-card__tags"><span class="accom-card__tag">Isolato</span><span class="accom-card__tag">Calette</span><span class="accom-card__tag">Silenzio</span></div></div></div>
+        <div class="accom-card"><img class="accom-card__img" width="800" height="500" src="https://i0.wp.com/images.squarespace-cdn.com/content/v1/623da04ccdb8b15a4840a776/9b5f3a1d-e795-47c0-a3ff-848c5edfe3de/camera-matrimoniale.jpg?ssl=1" alt="Foresteria Lega Navale" loading="lazy"><div class="accom-card__body"><h3 class="accom-card__name">7. Foresteria Lega Navale</h3><p class="accom-card__type">Foresteria · Porto</p><p class="accom-card__desc">Direttamente sul porto romano, dove le barche dondolano e l'aria sa di sale. La Foresteria della Lega Navale è per chi il mare ce l'ha nel sangue. Ti addormenti con il suono delle onde e ti svegli con il sole che si riflette sull'acqua.</p><div class="accom-card__tags"><span class="accom-card__tag">Porto</span><span class="accom-card__tag">Mare</span><span class="accom-card__tag">Nautica</span></div></div></div>
       </div>
     </section>
   </div>
@@ -413,12 +486,13 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
   <!-- ====================== PACKAGES ====================== -->
   <div class="page" id="page-packages">
     <section class="section" style="padding-top:120px">
-      <h1 class="section__title">PACCHETTI</h1>
-      <p class="section__subtitle">Scegli l'esperienza che fa per te. Ogni pacchetto è pensato per un modo diverso di vivere Concalma Island.</p>
+      <h2 class="section__title">PACCHETTI</h2>
+      <p class="section__subtitle">Tre modi diversi di vivere Concalma Island. Dalla singola giornata all'esperienza completa di tre giorni. Scegli il pacchetto che fa per te — ogni opzione è stata pensata per farti vivere l'isola esattamente come vuoi tu.</p>
       <div class="packages-grid">
         <div class="package-card">
-          <h3 class="package-card__name">Single Access</h3><div class="package-card__price">€49,90</div>
-          <p class="package-card__desc">L'accesso alla giornata principale dell'evento. Ideale per chi arriva a Ventotene in autonomia e vuole vivere le dieci ore di musica no-stop a Le Parracine. Non include alloggio né pasti.</p>
+          <div class="package-card__header"><h3 class="package-card__name">Single Access</h3><div class="package-card__price">€49,90</div></div>
+          <div class="package-card__content">
+          <p class="package-card__desc">Il tuo biglietto per la giornata più intensa dell'anno. Dieci ore di musica no-stop a Le Parracine, sei DJ, live painting e tutta l'energia di Concalma. Ideale per chi arriva a Ventotene in autonomia e vuole vivere il cuore pulsante dell'evento. Non include alloggio né pasti — solo la parte migliore.</p>
           <div class="package-card__list">
             <div class="package-card__item package-card__item--excluded">Hospitality: due notti in Hotel</div>
             <div class="package-card__item package-card__item--excluded">Opening party @Il Gabbiano</div>
@@ -428,10 +502,12 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
             <div class="package-card__item package-card__item--excluded">Private Afterparty</div>
             <div class="package-card__item package-card__item--excluded">Concalma BRUNCH MENU</div>
           </div>
+          </div>
         </div>
         <div class="package-card">
-          <h3 class="package-card__name">One Night Pack</h3><div class="package-card__price">€99,90</div>
-          <p class="package-card__desc">Una notte sull'isola con colazione e accesso alla giornata musicale principale. Arrivi sabato, vivi le dieci ore a Le Parracine, fai colazione all'Antico Forno Aiello e chiudi con il brunch della domenica.</p>
+          <div class="package-card__header"><h3 class="package-card__name">One Night Pack</h3><div class="package-card__price">€99,90</div></div>
+          <div class="package-card__content">
+          <p class="package-card__desc">Una notte sull'isola che vale un'intera vacanza. Arrivi sabato mattina, colazione all'Antico Forno Aiello, poi le dieci ore di musica a Le Parracine. Ti svegli la domenica, brunch vista mare e porti a casa ricordi che durano una vita. Il modo perfetto per assaggiare Concalma senza rinunciare a nulla di essenziale.</p>
           <div class="package-card__list">
             <div class="package-card__item">✓ Hospitality: una notte in Hotel</div>
             <div class="package-card__item package-card__item--excluded">Opening party @Il Gabbiano</div>
@@ -441,25 +517,28 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
             <div class="package-card__item package-card__item--excluded">Private Afterparty</div>
             <div class="package-card__item">✓ Concalma BRUNCH MENU</div>
           </div>
+          </div>
         </div>
         <div class="package-card package-card--featured">
-          <h3 class="package-card__name">Full Pack</h3><div class="package-card__price">€189,90</div>
-          <p class="package-card__desc">L'esperienza completa di Concalma Island. Due notti, dall'opening party del venerdì sera fino al brunch finale della domenica.</p>
+          <div class="package-card__header"><h3 class="package-card__name">Full Pack</h3><div class="package-card__price">€189,90</div></div>
+          <div class="package-card__content">
+          <p class="package-card__desc">L'esperienza completa, senza compromessi. Tre giorni sull'isola: dall'opening party del venerdì al tramonto fino al brunch della domenica con il mare davanti. Due notti, ogni pasto, ogni attività, ogni momento. Se vuoi vivere Concalma Island fino in fondo, questo è il tuo pacchetto.</p>
           <div class="package-card__list">
             <div class="package-card__item package-card__item--expandable">✓ Hospitality: due notti in Hotel</div>
-            <div class="package-card__item-detail">Due notti in una delle 7 strutture convenzionate. Assegnazione in ordine di prenotazione.</div>
+            <div class="package-card__item-detail">Due notti in una delle 7 strutture convenzionate sull'isola — dal borgo storico alla vista mare. L'assegnazione avviene in ordine di prenotazione: chi prenota prima, sceglie meglio.</div>
             <div class="package-card__item package-card__item--expandable">✓ Opening party @Il Gabbiano</div>
-            <div class="package-card__item-detail">Venerdì sera, ore 17:00. DJ set sulla costa al Il Gabbiano.</div>
+            <div class="package-card__item-detail">Venerdì sera, ore 17:00. Il tuo primo tramonto a Ventotene con un DJ set sulla costa al Il Gabbiano. Il modo migliore per iniziare tre giorni indimenticabili.</div>
             <div class="package-card__item package-card__item--expandable">✓ Concalma BREAKFAST MENU</div>
-            <div class="package-card__item-detail">Sabato mattina, ore 9:00. Colazione all'Antico Forno Aiello.</div>
+            <div class="package-card__item-detail">Sabato mattina, ore 9:00. Pane fresco, dolci fatti a mano e caffè all'Antico Forno Aiello — il forno più amato dell'isola. La colazione perfetta prima di una giornata leggendaria.</div>
             <div class="package-card__item package-card__item--expandable">✓ Off-stage activities</div>
-            <div class="package-card__item-detail">Sabato ore 11:00. Trekking, yoga o barca a vela.</div>
+            <div class="package-card__item-detail">Sabato ore 11:00. Scegli la tua avventura: trekking sui sentieri panoramici con Trekk'amo, yoga al tramonto o un'uscita in barca a vela con la Lega Navale. L'isola è tutta da scoprire.</div>
             <div class="package-card__item package-card__item--expandable">✓ Concalma Island 10 HOURS</div>
-            <div class="package-card__item-detail">Sabato dalle 15:00. Dieci ore di musica a Le Parracine con tutta la lineup.</div>
+            <div class="package-card__item-detail">Sabato dalle 15:00 all'01:00. Dieci ore di musica ininterrotta nell'anfiteatro naturale di Le Parracine con tutta la lineup, live painting, area chill e due chioschi.</div>
             <div class="package-card__item package-card__item--expandable">✓ Private Afterparty</div>
-            <div class="package-card__item-detail">Afterparty esclusivo al Il Gabbiano. Solo Full Pack.</div>
+            <div class="package-card__item-detail">Quando Le Parracine chiude, la notte non finisce. Afterparty esclusivo al Il Gabbiano, riservato solo ai Full Pack. La musica continua, il cerchio si stringe, i ricordi si moltiplicano.</div>
             <div class="package-card__item package-card__item--expandable">✓ Concalma BRUNCH MENU</div>
-            <div class="package-card__item-detail">Domenica ore 10:00. Brunch finale vista mare.</div>
+            <div class="package-card__item-detail">Domenica ore 10:00. L'ultimo atto di Concalma: un brunch vista mare dove ripercorri tutto quello che hai vissuto con le persone che l'hanno condiviso con te. Il finale perfetto.</div>
+          </div>
           </div>
         </div>
       </div>
@@ -470,19 +549,19 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
   <!-- ====================== PRIVACY ====================== -->
   <div class="page" id="page-privacy">
     <section class="section legal">
-      <h1>PRIVACY POLICY</h1>
+      <h2>PRIVACY POLICY</h2>
       <p><em>Ultimo aggiornamento: 1 aprile 2026</em></p>
-      <h2>1. Titolare del trattamento</h2>
+      <h3>1. Titolare del trattamento</h3>
       <p>Il Titolare del trattamento dei dati personali è Concalma Island, con sede operativa a Ventotene (LT), Italia. Email: <a href="mailto:info@concalma.cloud">info@concalma.cloud</a>.</p>
-      <h2>2. Tipologie di dati raccolti</h2>
+      <h3>2. Tipologie di dati raccolti</h3>
       <ul><li>Dati identificativi: nome, cognome, email, telefono</li><li>Dati di navigazione: IP, browser, pagine visitate</li><li>Dati relativi all'acquisto</li></ul>
-      <h2>3. Finalità del trattamento</h2>
+      <h3>3. Finalità del trattamento</h3>
       <ul><li>Esecuzione del contratto: gestione prenotazioni</li><li>Obblighi di legge: adempimenti fiscali</li><li>Consenso: comunicazioni promozionali</li><li>Legittimo interesse: miglioramento servizio</li></ul>
-      <h2>4. Base giuridica</h2>
+      <h3>4. Base giuridica</h3>
       <p>Art. 6(1)(a)(b)(c)(f) GDPR.</p>
-      <h2>5. Conservazione</h2>
+      <h3>5. Conservazione</h3>
       <ul><li>Dati contrattuali: 10 anni</li><li>Dati marketing: fino a revoca consenso</li><li>Dati navigazione: 24 mesi</li></ul>
-      <h2>6. Diritti dell'interessato</h2>
+      <h3>6. Diritti dell'interessato</h3>
       <p>Accesso, rettifica, cancellazione, limitazione, portabilità, opposizione, revoca consenso, reclamo al Garante. Contatto: <a href="mailto:info@concalma.cloud">info@concalma.cloud</a>.</p>
     </section>
   </div>
@@ -490,17 +569,17 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
   <!-- ====================== COOKIE ====================== -->
   <div class="page" id="page-cookie">
     <section class="section legal">
-      <h1>COOKIE POLICY</h1>
+      <h2>COOKIE POLICY</h2>
       <p><em>Ultimo aggiornamento: 1 aprile 2026</em></p>
-      <h2>1. Cookie tecnici (necessari)</h2>
+      <h3>1. Cookie tecnici (necessari)</h3>
       <p>Cookie di sessione e preferenze cookie. Base: legittimo interesse (Art. 6(1)(f) GDPR).</p>
-      <h2>2. Cookie analitici</h2>
+      <h3>2. Cookie analitici</h3>
       <p>Google Analytics con IP anonimizzato. Attivati solo dopo consenso esplicito. Durata: 24 mesi.</p>
-      <h2>3. Cookie di terze parti</h2>
+      <h3>3. Cookie di terze parti</h3>
       <p>Google Fonts per il caricamento del font Inter. Nessun cookie di profilazione o pubblicitario.</p>
-      <h2>4. Gestione</h2>
+      <h3>4. Gestione</h3>
       <p>Il banner cookie permette di accettare tutti i cookie o solo quelli necessari. Puoi modificare la scelta cancellando i cookie dal browser.</p>
-      <h2>5. Riferimenti normativi</h2>
+      <h3>5. Riferimenti normativi</h3>
       <ul><li>GDPR (Reg. UE 2016/679)</li><li>Direttiva ePrivacy 2002/58/CE</li><li>D.Lgs. 196/2003 e D.Lgs. 101/2018</li><li>Linee guida Garante Privacy 10/06/2021</li></ul>
     </section>
   </div>
@@ -508,37 +587,38 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
   <!-- ====================== TERMS ====================== -->
   <div class="page" id="page-terms">
     <section class="section legal">
-      <h1>TERMINI E CONDIZIONI</h1>
+      <h2>TERMINI E CONDIZIONI</h2>
       <p><em>Ultimo aggiornamento: 1 aprile 2026</em></p>
-      <h2>1. Oggetto</h2>
+      <h3>1. Oggetto</h3>
       <p>I presenti Termini regolano l'acquisto dei pacchetti per "Concalma Island", Ventotene (LT), 1-3 maggio 2026.</p>
-      <h2>2. Pacchetti</h2>
+      <h3>2. Pacchetti</h3>
       <ul><li>Single Access €49,90</li><li>One Night Pack €99,90</li><li>Full Pack €189,90</li></ul>
       <p>Traghetto Formia-Ventotene non incluso.</p>
-      <h2>3. Acquisto</h2>
+      <h3>3. Acquisto</h3>
       <p>La prenotazione è confermata solo dopo pagamento integrale e conferma scritta dell'Organizzatore.</p>
-      <h2>4. Diritto di recesso</h2>
+      <h3>4. Diritto di recesso</h3>
       <p>Ai sensi dell'art. 59, comma 1, lettera n) del Codice del Consumo, il diritto di recesso <strong>non si applica</strong>.</p>
-      <h2>5. Cancellazione e rimborsi</h2>
+      <h3>5. Cancellazione e rimborsi</h3>
       <ul><li>Oltre 30 giorni prima: rimborso 80%</li><li>Da 29 a 15 giorni: rimborso 50%</li><li>Meno di 14 giorni: nessun rimborso</li></ul>
       <p>Cancellazione per forza maggiore: rimborso integrale o voucher.</p>
-      <h2>6. Responsabilità</h2>
+      <h3>6. Responsabilità</h3>
       <p>L'Organizzatore non è responsabile per danni/furti di beni personali, ritardi trasporto marittimo, variazioni programma per forza maggiore.</p>
-      <h2>7. Immagini e riprese</h2>
+      <h3>7. Immagini e riprese</h3>
       <p>Partecipando, si acconsente all'uso della propria immagine per finalità promozionali.</p>
-      <h2>8. Foro competente</h2>
+      <h3>8. Foro competente</h3>
       <p>Foro di Latina. Per consumatori: foro del luogo di residenza (art. 66-bis Codice del Consumo).</p>
-      <h2>9. Contatti</h2>
-      <p>Email: <a href="mailto:info@concalma.cloud">info@concalma.cloud</a> · WhatsApp: <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener">+39 351 217 4675</a></p>
+      <h3>9. Contatti</h3>
+      <p>Email: <a href="mailto:info@concalma.cloud">info@concalma.cloud</a> · WhatsApp: <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener noreferrer">+39 351 217 4675</a></p>
     </section>
   </div>
 
   <!-- FOOTER (sempre visibile) -->
   <footer class="footer">
+    <img class="footer__logo" src="concalma_logo_clean.png" alt="Concalma Island logo" width="60" height="60">
     <div class="footer__links">
-      <a href="https://www.instagram.com/cconcalma_/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.instagram.com/cconcalma_/" target="_blank" rel="noopener noreferrer">Instagram</a>
       <a href="mailto:info@concalma.cloud">Mail</a>
-      <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener noreferrer">WhatsApp</a>
       <a href="#" data-nav="privacy">Privacy Policy</a>
       <a href="#" data-nav="cookie">Cookie Policy</a>
       <a href="#" data-nav="terms">Termini e Condizioni</a>
@@ -551,7 +631,7 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 
   <!-- COOKIE BANNER -->
   <div class="cookie-banner" id="cookieBanner">
-    <p>Questo sito utilizza cookie tecnici necessari al funzionamento e cookie analitici per migliorare la tua esperienza. <a href="#" data-nav="cookie" style="color:#1400FF;text-decoration:underline">Cookie Policy</a></p>
+    <p>Questo sito utilizza cookie tecnici necessari al funzionamento e cookie analitici per migliorare la tua esperienza. <a href="#" data-nav="cookie" style="color:#0000CC;text-decoration:underline">Cookie Policy</a></p>
     <div class="cookie-banner__actions">
       <button class="cookie-banner__btn cookie-banner__btn--accept" onclick="acceptCookies()">ACCETTA TUTTI</button>
       <button class="cookie-banner__btn cookie-banner__btn--reject" onclick="rejectCookies()">SOLO NECESSARI</button>
@@ -620,6 +700,39 @@ document.addEventListener('DOMContentLoaded',function(){
     entries.forEach(function(e){if(e.isIntersecting)e.target.querySelectorAll('.booking-bar__fill').forEach(function(b){b.style.width=b.dataset.width})});
   },{threshold:.3});
   document.querySelectorAll('.booking-status').forEach(function(el){obs.observe(el)});
+
+  // === VIDEO: compatibilità mobile ===
+  var heroVideo = document.getElementById('heroVideo');
+  var playBtn = document.getElementById('videoPlayBtn');
+  if (heroVideo) {
+    heroVideo.muted = true;
+    heroVideo.playsInline = true;
+    var videoStarted = false;
+    function hidePlayBtn() { if (playBtn) playBtn.style.display = 'none'; videoStarted = true; }
+    function showPlayBtn() { if (playBtn && !videoStarted) playBtn.style.display = 'block'; }
+    function tryPlay() {
+      heroVideo.muted = true;
+      var p = heroVideo.play();
+      if (p !== undefined) { p.then(hidePlayBtn).catch(showPlayBtn); }
+    }
+    if (playBtn) { playBtn.addEventListener('click', function() { heroVideo.muted = true; heroVideo.play().then(hidePlayBtn).catch(function(){}); }); }
+    heroVideo.addEventListener('click', function() { if (heroVideo.paused) { heroVideo.muted = true; heroVideo.play().then(hidePlayBtn).catch(function(){}); } });
+    heroVideo.addEventListener('loadedmetadata', tryPlay);
+    heroVideo.addEventListener('canplay', tryPlay);
+    if (heroVideo.readyState >= 1) tryPlay();
+    setTimeout(function() { if (heroVideo.paused) showPlayBtn(); }, 3000);
+    document.addEventListener('visibilitychange', function() { if (!document.hidden && heroVideo.paused && videoStarted) heroVideo.play().catch(function(){}); });
+  }
+
+  // === FADE-IN ANIMATION ===
+  var fadeEls = document.querySelectorAll('.section, .section--blue, .quote, .countdown, .social-links');
+  fadeEls.forEach(function(el) { el.classList.add('fade-in'); });
+  if ('IntersectionObserver' in window) {
+    var fadeObs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('visible'); fadeObs.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    fadeEls.forEach(function(el) { fadeObs.observe(el); });
+  } else { fadeEls.forEach(function(el) { el.classList.add('visible'); }); }
 });
 
 function acceptCookies(){document.getElementById('cookieBanner').style.display='none';localStorage.setItem('cc_cookies','all')}
@@ -628,7 +741,7 @@ if(localStorage.getItem('cc_cookies')){document.getElementById('cookieBanner').s
   </script>
 
   <script>
-  (function(){var _a=[70,108,97,118,105,111,32,65,117,103,117,115,116,111,32,68,105,32,70,111,103,103,105,97];var _b=_a.map(function(c){return String.fromCharCode(c)}).join('');var _c='FADF-CC-2026-0404';var _u='https://gist.githubusercontent.com/TUOUSERNAME/TUOGISTID/raw/status.txt';function _s(){document.body.innerHTML='<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#111;color:#fff;font-family:Helvetica,sans-serif;text-align:center;padding:2rem"><div><h1 style="font-size:3rem;margin-bottom:1rem">SITO DISATTIVATO</h1><p style="opacity:.6">Questo sito è stato temporaneamente sospeso.</p><p style="opacity:.3;margin-top:2rem;font-size:.6rem">'+_c+'</p></div></div>';document.title='Sito Disattivato'}try{fetch(_u,{cache:'no-store'}).then(function(r){return r.text()}).then(function(t){if(t.trim().toLowerCase()==='off')_s()}).catch(function(){})}catch(e){}})();
+  (function(){var _a=[70,108,97,118,105,111,32,65,117,103,117,115,116,111,32,68,105,32,70,111,103,103,105,97];var _b=_a.map(function(c){return String.fromCharCode(c)}).join('');var _c='FADF-CC-2026-0404';var _u='https://gist.githubusercontent.com/TUOUSERNAME/TUOGISTID/raw/status.txt';function _s(){document.body.innerHTML='<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#1E1E1E;color:#FFFFFF;font-family:Helvetica,sans-serif;text-align:center;padding:2rem"><div><h2 style="font-size:3rem;margin-bottom:1rem">SITO DISATTIVATO</h2><p style="opacity:.6">Questo sito è stato temporaneamente sospeso.</p><p style="opacity:.3;margin-top:2rem;font-size:.6rem">'+_c+'</p></div></div>';document.title='Sito Disattivato'}try{fetch(_u,{cache:'no-store'}).then(function(r){return r.text()}).then(function(t){if(t.trim().toLowerCase()==='off')_s()}).catch(function(){})}catch(e){}})();
   </script>
 
   <!-- JSON-LD Structured Data -->
@@ -637,7 +750,7 @@ if(localStorage.getItem('cc_cookies')){document.getElementById('cookieBanner').s
     "@context": "https://schema.org",
     "@type": "MusicEvent",
     "name": "Concalma Island 2026",
-    "description": "Festival esperienziale di 3 giorni sull'isola di Ventotene: musica house, afro house, tech house, deep house, arte, food e attività outdoor. Three days of pure madness.",
+    "description": "Festival esperienziale di 3 giorni sull'isola di Ventotene: musica house, afro house, tech house, deep house, arte, food e attività outdoor. 1-3 Maggio 2026, pacchetti da €49,90.",
     "url": "https://concalma.cloud/",
     "image": "https://concalma.cloud/og-image.jpg",
     "startDate": "2026-05-01T17:00:00+02:00",
@@ -684,6 +797,21 @@ if(localStorage.getItem('cc_cookies')){document.getElementById('cookieBanner').s
     "genre": ["House Music", "Afro House", "Tech House", "Deep House", "Electronic Music"],
     "typicalAgeRange": "18-",
     "inLanguage": "it"
+  }
+  </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Come raggiungo Ventotene?", "acceptedAnswer": {"@type": "Answer", "text": "Partenze da Formia: Venerdì 1 Maggio ore 08:45, 14:45, 18:00. Sabato 2 Maggio ore 08:45, 11:15, 18:00. Ritorno Domenica 3 Maggio ore 09:00, 15:45, 17:30. Il biglietto del traghetto non è incluso."}},
+      {"@type": "Question", "name": "Come raggiungo il porto di Formia?", "acceptedAnswer": {"@type": "Answer", "text": "In macchina circa 1h30 da Roma o Napoli. In treno circa 1 ora (stazione Formia-Gaeta)."}},
+      {"@type": "Question", "name": "Cosa fare dopo aver pagato?", "acceptedAnswer": {"@type": "Answer", "text": "Il team di Concalma ti contatterà con tutti i dettagli."}},
+      {"@type": "Question", "name": "Quanti posti sono disponibili?", "acceptedAnswer": {"@type": "Answer", "text": "Strettamente limitati per garantire l'esclusività dell'esperienza."}},
+      {"@type": "Question", "name": "Come funziona per l'alloggio?", "acceptedAnswer": {"@type": "Answer", "text": "Garantito per One Night Pack e Full Pack. Assegnazione in ordine di prenotazione."}}
+    ]
   }
   </script>
 </body>
