@@ -161,7 +161,7 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 .hotel-item__desc{font-size:.85rem;font-weight:400;text-transform:none;line-height:1.7;opacity:.8}
 
 /* ACCOMMODATIONS */
-.accom-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2rem;max-width:1100px;margin:0 auto}
+.accom-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;max-width:1100px;margin:0 auto}
 .accom-card{border:2px solid var(--blue);border-radius:var(--radius-sm);overflow:hidden;transition:var(--transition);box-shadow:var(--shadow);background:var(--white)}
 .accom-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover)}
 .accom-card__img{width:100%;height:220px;object-fit:cover;transition:transform .5s ease}
@@ -250,7 +250,7 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 
 /* RESPONSIVE */
 @media(max-width:900px){.packages-grid{grid-template-columns:1fr;max-width:500px}.partners-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){.navbar__links{display:none}.navbar__hamburger{display:flex}.navbar{padding:0 1.5rem}.hero__title{font-size:clamp(2.2rem,10vw,4rem)}.hero__logo{width:90px}.section{padding:70px 1.5rem}.section--blue{margin:30px 1rem;padding:50px 1.5rem}.social-links{flex-wrap:wrap;gap:.8rem}.artists-grid,.accom-grid{grid-template-columns:1fr}.cta-fixed{font-size:.68rem;padding:.7rem 1.5rem}.countdown__digits{gap:1.5rem}}
+@media(max-width:768px){.navbar__links{display:none}.navbar__hamburger{display:flex}.navbar{padding:0 1.5rem}.hero__title{font-size:clamp(2.2rem,10vw,4rem)}.hero__logo{width:90px}.section{padding:70px 1.5rem}.section--blue{margin:30px 1rem;padding:50px 1.5rem}.social-links{flex-wrap:wrap;gap:.8rem}.artists-grid{grid-template-columns:1fr}.accom-grid{grid-template-columns:1fr}.cta-fixed{font-size:.68rem;padding:.7rem 1.5rem}.countdown__digits{gap:1.5rem}}
 @media(max-width:480px){.partners-grid{grid-template-columns:1fr 1fr;gap:1.5rem}.countdown__number{font-size:2.5rem}.hero__artists{letter-spacing:2px}.package-card__content{padding:1.5rem 1.2rem}}
 
 /* Grid inline responsive */
@@ -268,7 +268,7 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
     <div class="navbar__links">
       <a data-nav="home" class="active">Home</a>
       <a data-nav="artists">Artists</a>
-      <a data-nav="accommodations">Dove Dormirai</a>
+      <a data-nav="accommodations">Accommodation</a>
       <a data-nav="packages">Pacchetti</a>
       <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener noreferrer">Prenota</a>
     </div>
@@ -277,7 +277,7 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
   <div class="navbar__mobile-menu">
     <a data-nav="home">Home</a>
     <a data-nav="artists">Artists</a>
-    <a data-nav="accommodations">Dove Dormirai</a>
+    <a data-nav="accommodations">Accommodation</a>
     <a data-nav="packages">Pacchetti</a>
     <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener noreferrer">Prenota</a>
   </div>
@@ -428,9 +428,9 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 
   <!-- ====================== ACCOMMODATIONS ====================== -->
   <div class="page" id="page-accommodations">
-    <section class="section" style="padding-top:120px">
-      <h2 class="section__title">DOVE DORMIRAI</h2>
-      <p class="section__subtitle">Ventotene è un'isola di appena 1,5 km², dove le automobili non esistono e ogni struttura è a pochi minuti a piedi dal mare e dai luoghi dell'evento. Qui non servono taxi — servono solo un paio di scarpe comode e la voglia di perdersi tra i vicoli.</p>
+    <section class="section" style="padding-top:120px;background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80') center/cover fixed;color:#fff">
+      <h2 class="section__title" style="color:#fff">ACCOMMODATION</h2>
+      <p class="section__subtitle" style="color:rgba(255,255,255,0.85)">Ventotene è un'isola di appena 1,5 km², dove le automobili non esistono e ogni struttura è a pochi minuti a piedi dal mare e dai luoghi dell'evento. Qui non servono taxi — servono solo un paio di scarpe comode e la voglia di perdersi tra i vicoli.</p>
       <div class="island-map">
         <svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
           <rect width="800" height="400" fill="#f8f9ff" rx="16"/>
