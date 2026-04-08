@@ -43,7 +43,7 @@
   <!-- Font: Helvetica (system) -->
   <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{--blue:#0000CC;--blue-dark:#0000aa;--white:#FFFFFF;--black:#1E1E1E;--grey:#888;--grey-light:#e0e0e0;--radius:20px;--radius-sm:16px;--radius-pill:50px;--font:'Helvetica Neue',Helvetica,Arial,sans-serif;--shadow:0 8px 30px rgba(0,0,0,.08);--shadow-hover:0 16px 40px rgba(0,0,0,.12);--transition:all .3s cubic-bezier(.4,0,.2,1);--cta:#FF6B35;--cta-hover:#E55A2B}
+:root{--blue:#0000CC;--blue-dark:#0000aa;--white:#FFFFFF;--black:#1E1E1E;--grey:#888;--grey-light:#e0e0e0;--radius:20px;--radius-sm:16px;--radius-pill:50px;--font:'Helvetica Neue',Helvetica,Arial,sans-serif;--shadow:0 8px 30px rgba(0,0,0,.08);--shadow-hover:0 16px 40px rgba(0,0,0,.12);--transition:all .3s cubic-bezier(.4,0,.2,1)}
 html{scroll-behavior:smooth}
 body{font-family:var(--font);background:var(--white);color:var(--black);line-height:1.7;overflow-x:hidden;text-align:left;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .section--blue{text-align:left}
@@ -75,10 +75,6 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 .navbar__mobile-menu a{color:var(--white);font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;cursor:pointer;padding:.3rem 0;opacity:.85;transition:opacity .2s}
 .navbar__mobile-menu a:hover{opacity:1}
 
-.navbar__cta{background:var(--cta) !important;color:var(--white) !important;padding:.35rem 1.2rem !important;border-radius:var(--radius-pill) !important;opacity:1 !important;font-size:.7rem !important}
-.navbar__cta:hover{background:var(--cta-hover) !important}
-.navbar__cta::after{display:none !important}
-
 .page{display:none}.page.active{display:block}
 
 /* HERO */
@@ -92,12 +88,10 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 .hero__video video{width:100%;height:100%;object-fit:cover;border-radius:var(--radius)}
 .hero__badge{display:inline-block;background:var(--white);color:var(--blue);padding:.7rem 2rem;border-radius:var(--radius-pill);font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:3px;box-shadow:0 4px 15px rgba(0,0,0,.1)}
 
-.hero__dates{font-size:clamp(1rem,2.5vw,1.5rem);font-weight:900;text-transform:uppercase;letter-spacing:6px;margin-bottom:1rem;background:rgba(255,255,255,.12);display:inline-block;padding:.6rem 2rem;border-radius:var(--radius-pill);border:1.5px solid rgba(255,255,255,.25)}
+.hero__dates{font-size:clamp(1rem,2.5vw,1.6rem);font-weight:900;text-transform:uppercase;letter-spacing:6px;margin-bottom:1.5rem;opacity:1;background:rgba(255,255,255,.15);display:inline-block;padding:.6rem 2rem;border-radius:var(--radius-pill);border:2px solid rgba(255,255,255,.3)}
 
-.hero__priming{font-size:clamp(.7rem,1.5vw,.9rem);font-weight:600;text-transform:uppercase;letter-spacing:3px;margin-bottom:1.5rem;opacity:.65}
-
-.hero__cta{display:inline-block;background:var(--cta);color:#fff;padding:1rem 3rem;border-radius:var(--radius-pill);font-size:.9rem;font-weight:900;text-transform:uppercase;letter-spacing:2px;transition:var(--transition);margin-bottom:2.5rem;box-shadow:0 6px 25px rgba(255,107,53,.4);text-decoration:none}
-.hero__cta:hover{background:var(--cta-hover);transform:translateY(-2px);box-shadow:0 10px 35px rgba(255,107,53,.5)}
+.hero__cta{display:inline-block;background:var(--white);color:var(--blue);padding:1rem 3rem;border-radius:var(--radius-pill);font-size:.9rem;font-weight:900;text-transform:uppercase;letter-spacing:2px;transition:var(--transition);margin-bottom:2.5rem;box-shadow:0 4px 20px rgba(0,0,0,.2)}
+.hero__cta:hover{background:var(--black);color:var(--white);transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.3)}
 
 /* Programme page on white background */
 .programme--light .programme__item{border-bottom-color:rgba(0,0,0,.1);color:var(--black)}
@@ -133,7 +127,6 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 .programme__time{min-width:50px;font-weight:800;opacity:.7}
 .programme__event{flex:1}
 .programme__highlight{display:inline-block;background:var(--white);color:var(--blue);padding:.4rem 1rem;border-radius:var(--radius-pill);font-size:.72rem;font-weight:800;letter-spacing:.5px}
-.programme__detail{font-size:.8rem;font-weight:400;text-transform:none;line-height:1.7;opacity:.75;padding:.3rem 0 .8rem 66px;border-bottom:none}
 
 /* QUOTE */
 .quote{text-align:center;padding:100px 2rem;max-width:900px;margin:0 auto}
@@ -264,8 +257,8 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 .footer__copy{font-size:.65rem;opacity:.3;letter-spacing:.5px}
 
 /* CTA */
-.cta-fixed{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:999;background:var(--cta);color:var(--white);border:none;padding:.8rem 2.5rem;border-radius:var(--radius-pill);font-family:var(--font);font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;cursor:pointer;text-decoration:none;display:inline-block;transition:var(--transition);box-shadow:0 6px 25px rgba(255,107,53,.3);white-space:nowrap}
-.cta-fixed:hover{background:var(--cta-hover);color:var(--white);transform:translateX(-50%) translateY(-2px);box-shadow:0 10px 35px rgba(255,107,53,.3)}
+.cta-fixed{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:999;background:var(--white);color:var(--blue);border:2px solid var(--blue);padding:.8rem 2.5rem;border-radius:var(--radius-pill);font-family:var(--font);font-size:.75rem;font-weight:900;text-transform:uppercase;letter-spacing:1.5px;cursor:pointer;text-decoration:none;display:inline-block;transition:var(--transition);box-shadow:0 6px 25px rgba(0,0,0,.12);white-space:nowrap}
+.cta-fixed:hover{background:var(--blue);color:var(--white);transform:translateX(-50%) translateY(-2px);box-shadow:0 10px 35px rgba(0,0,204,.25)}
 
 /* COOKIE */
 .cookie-banner{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);z-index:998;background:var(--white);color:var(--black);border:1px solid var(--grey-light);border-radius:var(--radius);padding:1.5rem 2rem;max-width:560px;width:calc(100% - 2rem);box-shadow:0 12px 40px rgba(0,0,0,.12);font-size:.8rem;line-height:1.7;text-align:justify}
@@ -286,41 +279,16 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 
 /* RESPONSIVE */
 @media(max-width:900px){.packages-grid{grid-template-columns:1fr;max-width:500px}.partners-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){.programme__detail{padding-left:0}.navbar__links{display:none}.navbar__hamburger{display:flex}.navbar{padding:0 1.5rem}.hero__title{font-size:clamp(2.2rem,10vw,4rem)}.hero__logo{width:90px}.section{padding:70px 1.5rem}.section--blue{margin:30px 1rem;padding:50px 1.5rem}.social-links{flex-wrap:wrap;gap:.8rem}.artists-grid{grid-template-columns:1fr}.accom-grid .accom-card{width:100%}.cta-fixed{font-size:.68rem;padding:.7rem 1.5rem}.countdown__digits{gap:1.5rem}}
+@media(max-width:768px){.navbar__links{display:none}.navbar__hamburger{display:flex}.navbar{padding:0 1.5rem}.hero__title{font-size:clamp(2.2rem,10vw,4rem)}.hero__logo{width:90px}.section{padding:70px 1.5rem}.section--blue{margin:30px 1rem;padding:50px 1.5rem}.social-links{flex-wrap:wrap;gap:.8rem}.artists-grid{grid-template-columns:1fr}.accom-grid .accom-card{width:100%}.cta-fixed{font-size:.68rem;padding:.7rem 1.5rem}.countdown__digits{gap:1.5rem}}
 @media(max-width:480px){.partners-grid{grid-template-columns:1fr 1fr;gap:1.5rem}.countdown__number{font-size:2.5rem}.hero__artists{letter-spacing:2px}.package-card__content{padding:1.5rem 1.2rem}}
-
-/* HIGHLIGHTS */
-.highlights-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.5rem;max-width:800px;margin:2.5rem auto 0;text-align:center}
-.highlight-item__number{display:block;font-size:clamp(2.2rem,5vw,3.5rem);font-weight:900;color:var(--blue);line-height:1}
-.highlight-item__label{display:block;font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--grey);margin-top:.5rem}
-@media(max-width:600px){.highlights-grid{grid-template-columns:repeat(3,1fr);gap:1.2rem}}
-@media(max-width:380px){.highlights-grid{grid-template-columns:repeat(2,1fr)}}
-
-/* EXPERIENCE */
-.experience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;max-width:900px;margin:2rem auto 0}
-.experience-card{background:var(--blue);color:var(--white);border-radius:var(--radius-sm);padding:2rem 1.5rem;text-align:center;transition:var(--transition)}
-.experience-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,204,.2)}
-.experience-card__icon{font-size:2rem;display:block;margin-bottom:.8rem}
-.experience-card__title{font-size:.85rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;display:block;margin-bottom:.5rem}
-.experience-card__desc{font-size:.75rem;font-weight:400;opacity:.8;line-height:1.6;display:block}
-@media(max-width:768px){.experience-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:480px){.experience-grid{grid-template-columns:1fr}}
-
-/* BOOKING PREVIEW */
-.booking-preview{max-width:600px;margin:0 auto 3rem;padding:1.5rem 2rem;background:rgba(0,0,204,.04);border-radius:var(--radius-sm);border:1px solid rgba(0,0,204,.1);text-align:center}
-.booking-preview__title{font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:2px;margin-bottom:1rem;color:var(--blue)}
-.booking-preview__items{display:flex;gap:2.5rem;justify-content:center;flex-wrap:wrap}
-.booking-preview__pct{font-size:1.8rem;font-weight:900;color:var(--blue);display:block;line-height:1}
-.booking-preview__name{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--grey);margin-top:.3rem;display:block}
 
 /* Justify only on desktop for long text */
 @media(min-width:769px){
-.welcome p,.section__subtitle,.artist-card__bio,.accom-card__desc,.hotel-item__desc,.package-card__desc,.legal p{text-align:justify}
+.welcome p,.section__subtitle,.artist-card__bio,.accom-card__desc,.hotel-item__desc,.package-card__desc{text-align:justify}
 }
 
 /* Grid inline responsive */
 @media(max-width:600px){
-#page-info [style*="grid-template-columns:repeat(3"]{grid-template-columns:1fr !important;gap:.8rem !important}
 [style*="grid-template-columns:repeat(3"]{grid-template-columns:repeat(2,1fr) !important}
 [style*="grid-template-columns:1fr 1fr;gap:1rem"]{grid-template-columns:1fr !important}
 }
@@ -338,7 +306,7 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
       <a data-nav="accommodations">Accommodation</a>
       <a data-nav="info">Info & FAQ</a>
       <a data-nav="packages">Pacchetti</a>
-      <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener noreferrer" class="navbar__cta">Prenota</a>
+      <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener noreferrer">Prenota</a>
     </div>
     <button class="navbar__hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
@@ -349,7 +317,7 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
     <a data-nav="accommodations">Accommodation</a>
     <a data-nav="info">Info & FAQ</a>
     <a data-nav="packages">Pacchetti</a>
-    <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener noreferrer" class="navbar__cta">Prenota</a>
+    <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" target="_blank" rel="noopener noreferrer">Prenota</a>
   </div>
 
   <!-- ====================== HOME ====================== -->
@@ -360,7 +328,6 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
       <p style="font-size:clamp(.8rem,2vw,1.2rem);font-weight:800;text-transform:uppercase;letter-spacing:4px;margin-bottom:1.5rem;opacity:.9">THREE DAYS OF PURE MADNESS</p>
       <p class="hero__artists">Eternal Love · Giuliano Lomonte · Fabrizio Sala · Cianfo · Andrea D'Angeli · Iole · Gemello</p>
       <div class="hero__dates">1 · 2 · 3 MAGGIO 2026 · VENTOTENE</div>
-      <p class="hero__priming">Musica · Mare · Magia · Nessuna Via di Fuga</p>
       <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" class="hero__cta" target="_blank" rel="noopener">PRENOTA ORA</a>
       <div class="hero__video" aria-label="Video promozionale del festival Concalma Island a Ventotene">
         <video id="heroVideo" autoplay muted loop playsinline preload="metadata" webkit-playsinline>
@@ -371,34 +338,14 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
       <span class="hero__badge">1 · 2 · 3 MAGGIO / VENTOTENE / 3 DAYS OF PURE MADNESS</span>
       <p style="max-width:680px;margin:1.5rem auto 0;font-size:.88rem;opacity:.75;text-transform:none;font-weight:400;line-height:1.8">Un'isola dove non esistono automobili. Un porto scavato nella roccia dai romani duemila anni fa. Il mare più blu del Tirreno. E per tre giorni, dal 1 al 3 maggio 2026, Ventotene diventa il palcoscenico di qualcosa che non hai mai vissuto prima. Musica house, afro house, tech house e deep house. Arte dal vivo. Cibo autentico. Tramonti che non dimenticherai. Concalma Island non è un festival — è il weekend del Primo Maggio che stavi aspettando.</p>
     </section>
-    <!-- Testo originale salvato per pagina interna "La nostra storia"
-    <p>Immagina un'isola lunga appena tre chilometri, dove le auto non esistono e le strade sono sentieri tra case color pastello che si affacciano su un porto scavato nel tufo dagli antichi romani. Ventotene è esattamente questo: un angolo dimenticato di Tirreno dove il tempo rallenta, il vento profuma di salsedine e il mare detta il ritmo di ogni giornata. Un luogo che sembra uscito da un sogno — e che per tre giorni diventerà il tuo.</p>
-    <p>Concalma Island nasce da un'idea semplice e potente: riunire persone, musica, arte e natura in un posto dove tutto il superfluo scompare. Dal 1 al 3 maggio 2026, quest'isola si trasforma in un'esperienza che non troverai da nessun'altra parte. Non è un festival nel senso classico. È un viaggio. Un mix esclusivo di creatività, sapori e suoni che prende forma attraverso ciò che ci rappresenta davvero: le persone che amiamo, i creativi che ammiriamo, gli amici che ci ispirano.</p>
-    <p>Sette artisti tra DJ set, live performance e live painting porteranno la loro energia sull'isola. Ma Concalma è molto di più della musica. La mattina ti svegli con il profumo del pane appena sfornato all'Antico Forno Aiello. Poi scegli: trekking sui sentieri panoramici con Trekk'amo Nature Club, yoga al tramonto con vista sul mare aperto, o un'uscita in barca a vela con la Lega Navale di Ventotene. A pranzo, street food tra i vicoli del borgo. La sera, cena in un ristorante affacciato sul porto romano. E poi la notte: dieci ore di musica no-stop a Le Parracine, l'anfiteatro naturale dell'isola, seguite dall'opening party e dall'afterparty esclusivo al Il Gabbiano.</p>
-    <p>Non è solo musica. Non è solo cibo. Non è solo arte. Non è solo un'isola. È tre giorni di pura magia dove tutto il resto scompare e rimane solo quello che conta davvero: il suono, il mare, le persone intorno a te e la sensazione di essere esattamente dove dovresti essere.</p>
-    <p>Line-up: Eternal Love, Giuliano Lomonte, Fabrizio Sala, Cianfo, Andrea D'Angeli, Iole e Gemello (rapper e pittore). Pacchetti a partire da €49,90. Posti strettamente limitati.</p>
-    -->
     <section class="section">
       <h2 class="section__title">BENVENUTI A CONCALMA ISLAND</h2>
-      <p class="section__subtitle">Un'isola senza auto nel cuore del Tirreno. Tre giorni di musica, arte, cibo autentico e natura. Dal 1 al 3 maggio 2026, Ventotene diventa il palcoscenico di qualcosa che non hai mai vissuto prima.</p>
-      <div class="highlights-grid">
-        <div class="highlight-item"><span class="highlight-item__number">3</span><span class="highlight-item__label">Giorni</span></div>
-        <div class="highlight-item"><span class="highlight-item__number">10</span><span class="highlight-item__label">Ore di musica</span></div>
-        <div class="highlight-item"><span class="highlight-item__number">7</span><span class="highlight-item__label">Artisti</span></div>
-        <div class="highlight-item"><span class="highlight-item__number">1</span><span class="highlight-item__label">Isola</span></div>
-        <div class="highlight-item"><span class="highlight-item__number">0</span><span class="highlight-item__label">Automobili</span></div>
-      </div>
-    </section>
-
-    <section class="section fade-in" style="padding-top:40px;padding-bottom:40px">
-      <h2 class="section__title">COSA TI ASPETTA</h2>
-      <div class="experience-grid">
-        <div class="experience-card"><span class="experience-card__icon">🎵</span><span class="experience-card__title">Musica</span><span class="experience-card__desc">House, Afro House, Tech House, Deep House. 10 ore no-stop a Le Parracine.</span></div>
-        <div class="experience-card"><span class="experience-card__icon">🎨</span><span class="experience-card__title">Arte</span><span class="experience-card__desc">Live painting di Gemello. Ogni tela nasce in tempo reale seguendo il ritmo.</span></div>
-        <div class="experience-card"><span class="experience-card__icon">🏔️</span><span class="experience-card__title">Outdoor</span><span class="experience-card__desc">Trekking panoramico, yoga al tramonto, uscita in barca a vela.</span></div>
-        <div class="experience-card"><span class="experience-card__icon">🍽️</span><span class="experience-card__title">Cibo</span><span class="experience-card__desc">Breakfast al forno storico, street food, cena vista porto, brunch finale.</span></div>
-        <div class="experience-card"><span class="experience-card__icon">🏝️</span><span class="experience-card__title">L'isola</span><span class="experience-card__desc">1,5 km² senza auto. Porto romano, calette nascoste, sentieri nel verde.</span></div>
-        <div class="experience-card"><span class="experience-card__icon">🌅</span><span class="experience-card__title">Community</span><span class="experience-card__desc">Posti limitati. Un gruppo ristretto che condivide la stessa energia.</span></div>
+      <div class="welcome">
+        <p>Immagina un'isola lunga appena tre chilometri, dove le auto non esistono e le strade sono sentieri tra case color pastello che si affacciano su un porto scavato nel tufo dagli antichi romani. Ventotene è esattamente questo: un angolo dimenticato di Tirreno dove il tempo rallenta, il vento profuma di salsedine e il mare detta il ritmo di ogni giornata. Un luogo che sembra uscito da un sogno — e che per tre giorni diventerà il tuo.</p>
+        <p>Concalma Island nasce da un'idea semplice e potente: riunire persone, musica, arte e natura in un posto dove tutto il superfluo scompare. Dal 1 al 3 maggio 2026, quest'isola si trasforma in un'esperienza che non troverai da nessun'altra parte. Non è un festival nel senso classico. È un viaggio. Un mix esclusivo di creatività, sapori e suoni che prende forma attraverso ciò che ci rappresenta davvero: le persone che amiamo, i creativi che ammiriamo, gli amici che ci ispirano.</p>
+        <p>Sette artisti tra DJ set, live performance e live painting porteranno la loro energia sull'isola. Ma Concalma è molto di più della musica. La mattina ti svegli con il profumo del pane appena sfornato all'Antico Forno Aiello. Poi scegli: trekking sui sentieri panoramici con Trekk'amo Nature Club, yoga al tramonto con vista sul mare aperto, o un'uscita in barca a vela con la Lega Navale di Ventotene. A pranzo, street food tra i vicoli del borgo. La sera, cena in un ristorante affacciato sul porto romano. E poi la notte: dieci ore di musica no-stop a Le Parracine, l'anfiteatro naturale dell'isola, seguite dall'opening party e dall'afterparty esclusivo al Il Gabbiano.</p>
+        <p>Non è solo musica. Non è solo cibo. Non è solo arte. Non è solo un'isola. È tre giorni di pura magia dove tutto il resto scompare e rimane solo quello che conta davvero: il suono, il mare, le persone intorno a te e la sensazione di essere esattamente dove dovresti essere.</p>
+        <p><strong>Line-up:</strong> Eternal Love, Giuliano Lomonte, Fabrizio Sala, Cianfo, Andrea D'Angeli, Iole e Gemello (rapper &amp; pittore). Pacchetti a partire da €49,90. Posti strettamente limitati.</p>
       </div>
     </section>
     <section class="section--blue">
@@ -516,124 +463,96 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 
   <!-- ====================== PROGRAMME ====================== -->
   <div class="page" id="page-programme">
-
-    <section class="section" style="padding-top:120px;padding-bottom:40px">
+    <section class="section" style="padding-top:120px">
       <h2 class="section__title">PROGRAMMA COMPLETO</h2>
       <p class="section__subtitle">Tre giorni sull'isola. Ogni momento è pensato per farti vivere un'esperienza unica tra musica, natura, cibo e community.</p>
-    </section>
-
-    <section class="section--blue" style="margin-top:0">
-      <div class="programme">
+      <div class="programme programme--light">
         <div class="programme__day">
           <h3 class="programme__day-title">Giorno 1 — Venerdì 1 Maggio</h3>
           <div class="programme__item"><span class="programme__time">14:00</span><span class="programme__event">HOTEL CHECK-IN</span></div>
-          <p class="programme__detail">Arrivo sull'isola e sistemazione in una delle 7 strutture convenzionate. Il team Concalma ti accoglie al porto.</p>
-          <div class="programme__item"><span class="programme__time">17:00</span><span class="programme__event">OPENING PARTY <a href="https://www.instagram.com/il_gabbiano_ventotene/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@IL GABBIANO</a></span></div>
-          <p class="programme__detail">Il primo tramonto a Ventotene con DJ set sulla costa. L'inizio ufficiale di Concalma Island.</p>
-          <div class="programme__item"><span class="programme__time">20:30</span><span class="programme__event">CONCALMA "MENU" <a href="https://www.instagram.com/lacambusa.ventotene/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@LA CAMBUSA</a></span></div>
-          <p class="programme__detail">Cena dedicata con menu curato dai ristoratori locali dell'isola.</p>
-          <div class="programme__item"><span class="programme__time">23:30</span><span class="programme__event"><span class="programme__highlight">AFTER PARTY <a href="https://www.instagram.com/il_gabbiano_ventotene/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@IL GABBIANO</a></span></span></div>
-          <p class="programme__detail">La notte continua con musica e drink vista mare. Riservato ai partecipanti Full Pack e One Night Pack.</p>
+          <p class="programme__item-desc">Arrivo sull'isola e sistemazione in una delle 7 strutture convenzionate. Il team Concalma ti accoglie al porto.</p>
+          <div class="programme__item"><span class="programme__time">17:00</span><span class="programme__event"><span class="programme__highlight">OPENING PARTY @IL GABBIANO</span></span></div>
+          <p class="programme__item-desc">Il primo tramonto a Ventotene con DJ set sulla costa. L'inizio ufficiale di Concalma Island.</p>
+          <div class="programme__item"><span class="programme__time">20:30</span><span class="programme__event">CONCALMA "MENU" @LA CAMBUSA</span></div>
+          <p class="programme__item-desc">Cena dedicata con menu curato dai ristoratori locali dell'isola.</p>
+          <div class="programme__item"><span class="programme__time">23:30</span><span class="programme__event"><span class="programme__highlight">AFTER PARTY @IL GABBIANO</span></span></div>
+          <p class="programme__item-desc">La notte continua con musica e drink vista mare.</p>
         </div>
         <div class="programme__day">
           <h3 class="programme__day-title">Giorno 2 — Sabato 2 Maggio</h3>
-          <div class="programme__item"><span class="programme__time">09:00</span><span class="programme__event">"BREAKFAST MENU" <a href="https://www.instagram.com/antico.forno_aiello/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@ANTICO FORNO AIELLO</a></span></div>
-          <p class="programme__detail">Pane fresco, dolci fatti a mano e caffè nel forno storico dell'isola. Il risveglio perfetto.</p>
-          <div class="programme__item"><span class="programme__time">11:00</span><span class="programme__event">OFF-STAGE ACTIVITIES</span></div>
-          <p class="programme__detail">Scegli la tua avventura: trekking sui sentieri panoramici con <a href="https://www.instagram.com/trekkamo.natureclub/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">Trekk'amo</a>, yoga al tramonto con <a href="https://www.instagram.com/ilaryamariani/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">Ilaria Mariani</a>, o uscita in barca a vela con la <a href="https://www.instagram.com/leganavaleventotene/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">Lega Navale</a>.</p>
+          <div class="programme__item"><span class="programme__time">09:00</span><span class="programme__event">"BREAKFAST MENU" @ANTICO FORNO AIELLO</span></div>
+          <p class="programme__item-desc">Pane fresco, dolci fatti a mano e caffè nel forno storico dell'isola.</p>
+          <div class="programme__item"><span class="programme__time">11:00</span><span class="programme__event">TREKKING / YOGA / SAILING</span></div>
+          <p class="programme__item-desc">Scegli la tua avventura: trekking panoramico con Trekk'amo, yoga al tramonto con Ilaria Mariani, o uscita in barca con la Lega Navale.</p>
           <div class="programme__item"><span class="programme__time">13:00</span><span class="programme__event">STREET FOOD "LUNCH MENU"</span></div>
-          <p class="programme__detail">Pranzo tra i vicoli del borgo con i sapori autentici dell'isola.</p>
-          <div class="programme__item"><span class="programme__time">15:00</span><span class="programme__event"><span class="programme__highlight">ISLAND "10 HOURS" <a href="https://www.instagram.com/leparracine/" target="_blank" rel="noopener" style="text-decoration:underline;color:inherit">@LE PARRACINE</a></span></span></div>
-          <p class="programme__detail">Dieci ore di musica ininterrotta nell'anfiteatro naturale scavato nel tufo. Sei DJ si alternano dal pomeriggio a notte fonda. Due chioschi, chill area con amache vista mare, live painting di Gemello.</p>
+          <p class="programme__item-desc">Street food tra i vicoli del borgo.</p>
+          <div class="programme__item"><span class="programme__time">15:00-01:00</span><span class="programme__event"><span class="programme__highlight">ISLAND "10 HOURS" @LE PARRACINE</span></span></div>
+          <p class="programme__item-desc">Dieci ore di musica ininterrotta nell'anfiteatro naturale scavato nel tufo. Sei DJ si alternano dal pomeriggio a notte fonda.</p>
         </div>
         <div class="programme__day">
           <h3 class="programme__day-title">Giorno 3 — Domenica 3 Maggio</h3>
           <div class="programme__item"><span class="programme__time">10:00</span><span class="programme__event">CONCALMA "BRUNCH MENU"</span></div>
-          <p class="programme__detail">L'ultimo atto: brunch vista mare per salutare l'isola e ripercorrere tutto quello che è stato.</p>
+          <p class="programme__item-desc">L'ultimo atto: brunch vista mare per salutare l'isola.</p>
           <div class="programme__item"><span class="programme__time">14:00</span><span class="programme__event">HOTEL CHECK-OUT</span></div>
-          <p class="programme__detail">Si torna a casa. Ma Ventotene non ti lascia andare davvero.</p>
         </div>
       </div>
-    </section>
 
-    <section class="section">
-      <h2 class="section__title">LA NOSTRA STORIA</h2>
-      <div class="welcome">
-        <p>Immagina un'isola lunga appena tre chilometri, dove le auto non esistono e le strade sono sentieri tra case color pastello che si affacciano su un porto scavato nel tufo dagli antichi romani. Ventotene è esattamente questo: un angolo dimenticato di Tirreno dove il tempo rallenta, il vento profuma di salsedine e il mare detta il ritmo di ogni giornata.</p>
-        <p>Concalma Island nasce da un'idea semplice e potente: riunire persone, musica, arte e natura in un posto dove tutto il superfluo scompare. Non è un festival nel senso classico. È un viaggio. Un mix esclusivo di creatività, sapori e suoni che prende forma attraverso ciò che ci rappresenta davvero: le persone che amiamo, i creativi che ammiriamo, gli amici che ci ispirano.</p>
-        <p>Non è solo musica. Non è solo cibo. Non è solo arte. Non è solo un'isola. È tre giorni di pura magia dove tutto il resto scompare e rimane solo quello che conta davvero.</p>
+      <div style="margin-top:4rem;max-width:800px;margin-left:auto;margin-right:auto">
+        <h3 class="section__title" style="font-size:1.4rem">VENUE: LE PARRACINE</h3>
+        <p style="text-align:center;font-size:.95rem;line-height:1.8;color:#444;max-width:700px;margin:0 auto 2rem">Le Parracine è un anfiteatro naturale scavato nel tufo vulcanico, affacciato direttamente sul Mar Tirreno. È qui che sabato 2 maggio prende vita l'evento principale di Concalma Island: dieci ore di musica no-stop con sei DJ, live painting, area chill con amache e cuscini vista mare, e due chioschi. Un palco che nessun designer avrebbe potuto immaginare meglio.</p>
+      </div>
+
+      <div style="text-align:center;margin-top:2rem">
+        <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" class="hero__cta" target="_blank" rel="noopener" style="font-size:.8rem">PRENOTA IL TUO POSTO</a>
       </div>
     </section>
-
-    <section class="section" style="text-align:center;padding-top:20px">
-      <a href="https://wa.me/393512174675?text=Ciao%2C%20voglio%20info%20su%20Concalma%20Island%202026%20%F0%9F%8F%9D%EF%B8%8F" class="hero__cta" target="_blank" rel="noopener" style="display:inline-block">PRENOTA IL TUO POSTO</a>
-    </section>
-
   </div>
 
   <!-- ====================== INFO & FAQ ====================== -->
   <div class="page" id="page-info">
-
     <section class="section" style="padding-top:120px">
       <h2 class="section__title">INFO PRATICHE</h2>
-      <p class="section__subtitle">Tutto quello che devi sapere per goderti Concalma Island senza pensieri.</p>
-    </section>
 
-    <section class="section--blue" style="margin-top:0">
-      <h3 style="font-size:1.1rem;font-weight:900;text-transform:uppercase;letter-spacing:2px;margin-bottom:1.5rem;text-align:center">COME ARRIVARE</h3>
-      <div style="max-width:700px;margin:0 auto">
-        <p style="font-size:.9rem;line-height:1.8;text-transform:none;font-weight:400;opacity:.9;margin-bottom:1.5rem">Da Roma o Napoli: in macchina circa 1h30 fino a Formia. In treno circa 1 ora (stazione Formia-Gaeta). Da lì si prende il traghetto per Ventotene.</p>
-        <h4 style="font-size:.85rem;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:1rem">Traghetti da Formia</h4>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:1.5rem">
-          <div style="background:rgba(255,255,255,.08);border-radius:12px;padding:1.2rem;text-align:center">
-            <span style="display:block;font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:.8rem;opacity:.7">Venerdì 1 Maggio</span>
-            <span style="display:block;font-size:.85rem;font-weight:700">08:45</span>
-            <span style="display:block;font-size:.85rem;font-weight:700">14:45</span>
-            <span style="display:block;font-size:.85rem;font-weight:700">18:00</span>
-          </div>
-          <div style="background:rgba(255,255,255,.08);border-radius:12px;padding:1.2rem;text-align:center">
-            <span style="display:block;font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:.8rem;opacity:.7">Sabato 2 Maggio</span>
-            <span style="display:block;font-size:.85rem;font-weight:700">08:45</span>
-            <span style="display:block;font-size:.85rem;font-weight:700">11:15</span>
-            <span style="display:block;font-size:.85rem;font-weight:700">18:00</span>
-          </div>
-          <div style="background:rgba(255,255,255,.08);border-radius:12px;padding:1.2rem;text-align:center">
-            <span style="display:block;font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;margin-bottom:.8rem;opacity:.7">Domenica 3 (ritorno)</span>
-            <span style="display:block;font-size:.85rem;font-weight:700">09:00</span>
-            <span style="display:block;font-size:.85rem;font-weight:700">15:45</span>
-            <span style="display:block;font-size:.85rem;font-weight:700">17:30</span>
-          </div>
+      <div class="info-section">
+        <h3 class="info-section__title">COME ARRIVARE</h3>
+        <p><strong>Da Roma/Napoli:</strong> In macchina circa 1h30 fino a Formia. In treno circa 1 ora (stazione Formia-Gaeta).</p>
+        <p><strong>Traghetti da Formia:</strong></p>
+        <ul>
+          <li><strong>Venerdì 1 Maggio:</strong> 08:45 / 14:45 / 18:00</li>
+          <li><strong>Sabato 2 Maggio:</strong> 08:45 / 11:15 / 18:00</li>
+          <li><strong>Domenica 3 Maggio (ritorno):</strong> 09:00 / 16:40 / 18:00</li>
+        </ul>
+        <p>Il biglietto del traghetto Formia-Ventotene non è incluso in nessun pacchetto.</p>
+      </div>
+
+      <div class="info-section">
+        <h3 class="info-section__title">DOPO IL PAGAMENTO</h3>
+        <p>Il team di Concalma ti contatterà con tutti i dettagli su alloggio, orari e trasporti.</p>
+      </div>
+
+      <div class="info-section">
+        <h3 class="info-section__title">ALLOGGIO</h3>
+        <p>L'alloggio è garantito per i pacchetti One Night Pack e Full Pack. L'assegnazione avviene in ordine di prenotazione tra le 7 strutture convenzionate sull'isola.</p>
+      </div>
+
+      <div class="info-section">
+        <h3 class="info-section__title">FAQ</h3>
+        <div class="faq-list faq-list--light">
+          <div class="faq-item"><div class="faq-item__question">Come raggiungo Ventotene?</div><div class="faq-item__answer"><strong>Partenze da Formia:</strong><br>Venerdì 1 Maggio: 08:45 / 14:45 / 18:00<br>Sabato 2 Maggio: 08:45 / 11:15 / 18:00<br><br><strong>Ritorno:</strong><br>Domenica 3 Maggio: 09:00 / 16:40 / 18:00<br><br>Il biglietto del traghetto non è incluso.</div></div>
+          <div class="faq-item"><div class="faq-item__question">Come raggiungo il porto di Formia?</div><div class="faq-item__answer">In macchina circa 1h30 da Roma o Napoli. In treno circa 1 ora (stazione Formia-Gaeta).</div></div>
+          <div class="faq-item"><div class="faq-item__question">Cosa fare dopo aver pagato?</div><div class="faq-item__answer">Il team di Concalma ti contatterà con tutti i dettagli.</div></div>
+          <div class="faq-item"><div class="faq-item__question">Quanti posti sono disponibili?</div><div class="faq-item__answer">Strettamente limitati per garantire l'esclusività dell'esperienza.</div></div>
+          <div class="faq-item"><div class="faq-item__question">Come funziona per l'alloggio?</div><div class="faq-item__answer">Garantito per One Night Pack e Full Pack. Assegnazione in ordine di prenotazione tra le 7 strutture convenzionate.</div></div>
+          <div class="faq-item"><div class="faq-item__question">Cosa posso portare?</div><div class="faq-item__answer">Abbigliamento comodo, crema solare, costume. L'isola è piccola e si gira a piedi. Consigliamo scarpe comode per il trekking.</div></div>
+          <div class="faq-item"><div class="faq-item__question">C'è copertura telefonica/wifi?</div><div class="faq-item__answer">Sì, c'è copertura mobile sull'isola. Alcune strutture offrono wifi.</div></div>
+          <div class="faq-item"><div class="faq-item__question">Il biglietto del traghetto è incluso?</div><div class="faq-item__answer">No, il biglietto del traghetto Formia-Ventotene non è incluso in nessun pacchetto.</div></div>
         </div>
-        <p style="font-size:.75rem;opacity:.6;text-align:center;text-transform:none">Il biglietto del traghetto Formia-Ventotene non è incluso in nessun pacchetto.</p>
+      </div>
+
+      <div style="text-align:center;margin-top:3rem">
+        <a href="https://wa.me/393512174675?text=Ciao%2C%20ho%20una%20domanda%20su%20Concalma%20Island%202026" class="hero__cta" target="_blank" rel="noopener" style="font-size:.8rem">HAI ALTRE DOMANDE? SCRIVICI</a>
       </div>
     </section>
-
-    <section class="section" style="padding-top:50px;padding-bottom:50px">
-      <h3 style="font-size:1.1rem;font-weight:900;text-transform:uppercase;letter-spacing:2px;margin-bottom:1rem;text-align:center">ALLOGGIO</h3>
-      <p style="max-width:700px;margin:0 auto;font-size:.9rem;line-height:1.8;text-align:center">L'alloggio è garantito per i pacchetti One Night Pack e Full Pack. L'assegnazione avviene in ordine di prenotazione tra le 7 strutture convenzionate sull'isola — dal borgo storico alla vista mare. <a data-nav="accommodations" style="color:var(--blue);text-decoration:underline;cursor:pointer">Scopri le strutture →</a></p>
-    </section>
-
-    <section class="section--blue">
-      <h2 class="section__title">FAQ</h2>
-      <div class="faq-list" id="info-faq-list">
-        <div class="faq-item"><div class="faq-item__question">Come raggiungo Ventotene?</div><div class="faq-item__answer"><strong>Partenze da Formia:</strong><br>Venerdì 1 Maggio: 08:45 / 14:45 / 18:00<br>Sabato 2 Maggio: 08:45 / 11:15 / 18:00<br><br><strong>Ritorno:</strong><br>Domenica 3 Maggio: 09:00 / 15:45 / 17:30<br><br>Il biglietto del traghetto non è incluso.</div></div>
-        <div class="faq-item"><div class="faq-item__question">Come raggiungo il porto di Formia?</div><div class="faq-item__answer">In macchina circa 1h30 da Roma o Napoli. In treno circa 1 ora (stazione Formia-Gaeta).</div></div>
-        <div class="faq-item"><div class="faq-item__question">Cosa fare dopo aver pagato?</div><div class="faq-item__answer">Il team di Concalma ti contatterà via WhatsApp o email con tutti i dettagli su alloggio, orari e trasporti.</div></div>
-        <div class="faq-item"><div class="faq-item__question">Quanti posti sono disponibili?</div><div class="faq-item__answer">Strettamente limitati per garantire l'esclusività dell'esperienza. Quando un pacchetto è esaurito, non sarà più disponibile.</div></div>
-        <div class="faq-item"><div class="faq-item__question">Come funziona per l'alloggio?</div><div class="faq-item__answer">Garantito per One Night Pack e Full Pack. Assegnazione in ordine di prenotazione tra le 7 strutture convenzionate.</div></div>
-        <div class="faq-item"><div class="faq-item__question">Cosa posso portare?</div><div class="faq-item__answer">Abbigliamento comodo, crema solare, costume. L'isola è piccola e si gira a piedi — consigliamo scarpe comode per il trekking. Non ci sono automobili, quindi porta solo l'essenziale.</div></div>
-        <div class="faq-item"><div class="faq-item__question">C'è copertura telefonica e WiFi?</div><div class="faq-item__answer">Sì, c'è copertura mobile sull'isola (tutti gli operatori principali). Alcune strutture offrono WiFi.</div></div>
-        <div class="faq-item"><div class="faq-item__question">Il biglietto del traghetto è incluso?</div><div class="faq-item__answer">No, il biglietto del traghetto Formia-Ventotene non è incluso in nessun pacchetto. Lo acquisti in autonomia al porto o online.</div></div>
-        <div class="faq-item"><div class="faq-item__question">Posso venire solo per il sabato?</div><div class="faq-item__answer">Sì, il pacchetto Single Access (€49,90) ti dà accesso all'evento "Island 10 Hours" di sabato 2 maggio dalle 15:00 all'01:00. Non include alloggio.</div></div>
-        <div class="faq-item"><div class="faq-item__question">Come funzionano i rimborsi?</div><div class="faq-item__answer">Oltre 30 giorni prima: rimborso 80%. Da 29 a 15 giorni: rimborso 50%. Meno di 14 giorni: nessun rimborso. Cancellazione per forza maggiore: rimborso integrale o voucher.</div></div>
-      </div>
-    </section>
-
-    <section class="section" style="text-align:center">
-      <p style="font-size:1rem;font-weight:700;margin-bottom:1.5rem">Hai altre domande?</p>
-      <a href="https://wa.me/393512174675?text=Ciao%2C%20ho%20una%20domanda%20su%20Concalma%20Island%202026" class="hero__cta" target="_blank" rel="noopener" style="display:inline-block">SCRIVICI SU WHATSAPP</a>
-    </section>
-
   </div>
 
   <!-- ====================== ARTISTS ====================== -->
@@ -720,14 +639,6 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
     <section class="section" style="padding-top:120px">
       <h2 class="section__title">PACCHETTI</h2>
       <p class="section__subtitle">Tre modi diversi di vivere Concalma Island. Dalla singola giornata all'esperienza completa di tre giorni. Scegli il pacchetto che fa per te — ogni opzione è stata pensata per farti vivere l'isola esattamente come vuoi tu.</p>
-      <div class="booking-preview">
-        <p class="booking-preview__title">Disponibilità in tempo reale</p>
-        <div class="booking-preview__items">
-          <div class="booking-preview__item"><span class="booking-preview__pct">15%</span><span class="booking-preview__name">Full Pack</span></div>
-          <div class="booking-preview__item"><span class="booking-preview__pct">40%</span><span class="booking-preview__name">One Night</span></div>
-          <div class="booking-preview__item"><span class="booking-preview__pct">20%</span><span class="booking-preview__name">Single</span></div>
-        </div>
-      </div>
       <div class="packages-grid">
         <div class="package-card">
           <div class="package-card__header"><h3 class="package-card__name">Single Access</h3><div class="package-card__price">€49,90</div></div>
