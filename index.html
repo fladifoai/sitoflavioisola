@@ -82,7 +82,7 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 .page{display:none}.page.active{display:block}
 
 /* HERO */
-.hero{background:linear-gradient(165deg,#0000CC 0%,#0000aa 50%,#000088 100%);color:var(--white);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 2rem 80px;position:relative;overflow:hidden}
+.hero{background:linear-gradient(rgba(0,0,80,.55),rgba(0,0,80,.55)),url("img/hero-island-aerial.jpg") center/cover no-repeat;color:var(--white);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 2rem 80px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 30% 50%,rgba(255,255,255,.03) 0%,transparent 50%);pointer-events:none}
 .hero__title{font-size:clamp(2.8rem,12vw,9rem);font-weight:900;letter-spacing:6px;margin-bottom:.8rem;line-height:.95}
 .hero__artists{font-size:clamp(.7rem,1.4vw,.95rem);font-weight:600;text-transform:uppercase;letter-spacing:4px;margin-bottom:2.5rem;opacity:.7}
@@ -313,6 +313,14 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 .booking-preview__pct{font-size:1.8rem;font-weight:900;color:var(--blue);display:block;line-height:1}
 .booking-preview__name{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--grey);margin-top:.3rem;display:block}
 
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 5%}
+.gallery-item{border-radius:var(--radius-sm);overflow:hidden;aspect-ratio:4/3}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+.gallery-item img:hover{transform:scale(1.05)}
+@media(max-width:768px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.gallery-grid{grid-template-columns:1fr}}
+
 /* Justify only on desktop for long text */
 @media(min-width:769px){
 .welcome p,.section__subtitle,.artist-card__bio,.accom-card__desc,.hotel-item__desc,.package-card__desc,.legal p{text-align:justify}
@@ -393,12 +401,12 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
     <section class="section fade-in" style="padding-top:40px;padding-bottom:40px">
       <h2 class="section__title">COSA TI ASPETTA</h2>
       <div class="experience-grid">
-        <div class="experience-card"><span class="experience-card__icon">🎵</span><span class="experience-card__title">Musica</span><span class="experience-card__desc">House, Afro House, Tech House, Deep House. 10 ore no-stop a Le Parracine.</span></div>
-        <div class="experience-card"><span class="experience-card__icon">🎨</span><span class="experience-card__title">Arte</span><span class="experience-card__desc">Live painting di Gemello. Ogni tela nasce in tempo reale seguendo il ritmo.</span></div>
-        <div class="experience-card"><span class="experience-card__icon">🏔️</span><span class="experience-card__title">Outdoor</span><span class="experience-card__desc">Trekking panoramico, yoga al tramonto, uscita in barca a vela.</span></div>
-        <div class="experience-card"><span class="experience-card__icon">🍽️</span><span class="experience-card__title">Cibo</span><span class="experience-card__desc">Breakfast al forno storico, street food, cena vista porto, brunch finale.</span></div>
-        <div class="experience-card"><span class="experience-card__icon">🏝️</span><span class="experience-card__title">L'isola</span><span class="experience-card__desc">1,5 km² senza auto. Porto romano, calette nascoste, sentieri nel verde.</span></div>
-        <div class="experience-card"><span class="experience-card__icon">🌅</span><span class="experience-card__title">Community</span><span class="experience-card__desc">Posti limitati. Un gruppo ristretto che condivide la stessa energia.</span></div>
+        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-musica.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">🎵</span><span class="experience-card__title">Musica</span><span class="experience-card__desc">House, Afro House, Tech House, Deep House. 10 ore no-stop a Le Parracine.</span></div>
+        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-arte.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">🎨</span><span class="experience-card__title">Arte</span><span class="experience-card__desc">Live painting di Gemello. Ogni tela nasce in tempo reale seguendo il ritmo.</span></div>
+        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-outdoor.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">🏔️</span><span class="experience-card__title">Outdoor</span><span class="experience-card__desc">Trekking panoramico, yoga al tramonto, uscita in barca a vela.</span></div>
+        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-cibo.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">🍽️</span><span class="experience-card__title">Cibo</span><span class="experience-card__desc">Breakfast al forno storico, street food, cena vista porto, brunch finale.</span></div>
+        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-isola.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">🏝️</span><span class="experience-card__title">L'isola</span><span class="experience-card__desc">1,5 km² senza auto. Porto romano, calette nascoste, sentieri nel verde.</span></div>
+        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-community.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">🌅</span><span class="experience-card__title">Community</span><span class="experience-card__desc">Posti limitati. Un gruppo ristretto che condivide la stessa energia.</span></div>
       </div>
     </section>
     <section class="section--blue">
@@ -461,6 +469,19 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
     </section>
 
     <section class="quote"><p class="quote__text">"Concalma non è un evento. È il momento in cui la nostra visione prende forma — attraverso le persone che amiamo, i creativi che ammiriamo, gli amici che ci ispirano. Tre giorni su un'isola dove il mondo si ferma e rimane solo quello che conta. Questo è Concalma. Questo è Ventotene."</p></section>
+
+    <section class="section gallery-section fade-in" id="gallery">
+      <h2 class="section__title">L'ESPERIENZA CONCALMA</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="img/gallery-porto-romano.jpg" alt="Porto Romano di Ventotene" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery-concerto.jpg" alt="Concerto all'aperto Concalma Island" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery-yoga.jpg" alt="Yoga al tramonto sulla spiaggia" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery-mare.jpg" alt="Mare turchese del Mediterraneo" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery-amici.jpg" alt="Amici brindano al tramonto" loading="lazy"></div>
+        <div class="gallery-item"><img src="img/gallery-scogliera.jpg" alt="Scogliera panoramica sul mare" loading="lazy"></div>
+      </div>
+    </section>
+
     <section class="section--blue">
       <h2 class="section__title">STATO PRENOTAZIONI</h2>
       <div class="booking-status">
