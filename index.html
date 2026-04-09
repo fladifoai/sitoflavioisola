@@ -191,8 +191,8 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 .hotel-item__desc{font-size:.85rem;font-weight:400;text-transform:none;line-height:1.7;opacity:.8}
 
 /* ACCOMMODATIONS */
+#page-accommodations .section{position:relative;max-width:100%;padding-left:5%;padding-right:5%}
 #page-accommodations .section::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(165deg,#0a0a3a 0%,#0000aa 40%,#000066 100%);z-index:0}
-#page-accommodations .section{position:relative}
 #page-accommodations .section>*{position:relative;z-index:1}
 .accom-grid{display:flex;flex-wrap:wrap;gap:1.5rem;max-width:1200px;margin:0 auto;justify-content:center}
 .accom-grid .accom-card{width:calc(25% - 1.2rem);min-width:220px}
@@ -339,7 +339,7 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
 .packages-hero-bg::after{background:linear-gradient(to top,#f8f9ff,transparent)}
 .package-card--best{transform:scale(1.03);border-color:#0000CC;box-shadow:0 16px 50px rgba(0,0,204,.2)}
 .package-card--best .package-card__header{position:relative}
-.package-card--best .package-card__header::before{content:'PIU\' SCELTO';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--cta);color:#FFFFFF;font-size:.6rem;font-weight:800;letter-spacing:1.5px;padding:.3rem 1rem;border-radius:50px;white-space:nowrap}
+.package-card--best .package-card__header::before{content:'PIU\' SCELTO';position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--cta);color:#FFFFFF;font-size:.7rem;font-weight:900;letter-spacing:2px;padding:.45rem 1.4rem;border-radius:50px;white-space:nowrap;box-shadow:0 4px 12px rgba(255,107,53,.4);z-index:2}
 .packages-trust{display:flex;justify-content:center;gap:2rem;margin-top:3rem;flex-wrap:wrap;background:#f4f4fa;border-radius:16px;padding:2rem 1.5rem}
 .packages-trust__item{text-align:center;min-width:80px}
 .packages-trust__number{font-size:2.2rem;font-weight:900;color:#1E1E1E;line-height:1}
@@ -433,12 +433,12 @@ h1,h2,h3,h4,h5,h6{text-transform:uppercase;font-weight:800;line-height:1.1}
     <section class="section fade-in" style="padding-top:40px;padding-bottom:40px">
       <h2 class="section__title">COSA TI ASPETTA</h2>
       <div class="experience-grid">
-        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-musica.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">🎵</span><span class="experience-card__title">Musica</span><span class="experience-card__desc">House, Afro House, Tech House, Deep House. 10 ore no-stop a Le Parracine.</span></div>
-        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-arte.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">🎨</span><span class="experience-card__title">Arte</span><span class="experience-card__desc">Live painting di Gemello. Ogni tela nasce in tempo reale seguendo il ritmo.</span></div>
-        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-outdoor.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">🏔️</span><span class="experience-card__title">Outdoor</span><span class="experience-card__desc">Trekking panoramico, yoga con Ilarya Mariani, uscita in barca a vela.</span></div>
-        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-cibo.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">🍽️</span><span class="experience-card__title">Cibo</span><span class="experience-card__desc">Breakfast al forno storico, street food, cena vista porto, brunch finale.</span></div>
-        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-isola.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">🏝️</span><span class="experience-card__title">L'isola</span><span class="experience-card__desc">1,5 km² senza auto. Porto romano, calette nascoste, sentieri nel verde.</span></div>
-        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-community.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">🌅</span><span class="experience-card__title">Community</span><span class="experience-card__desc">Posti limitati. Un gruppo ristretto che condivide la stessa energia.</span></div>
+        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-musica.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">—</span><span class="experience-card__title">Musica</span><span class="experience-card__desc">House, Afro House, Tech House, Deep House. 10 ore no-stop a Le Parracine.</span></div>
+        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-arte.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">—</span><span class="experience-card__title">Arte</span><span class="experience-card__desc">Live painting di Gemello. Ogni tela nasce in tempo reale seguendo il ritmo.</span></div>
+        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-outdoor.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">—</span><span class="experience-card__title">Outdoor</span><span class="experience-card__desc">Trekking panoramico, yoga con Ilarya Mariani, uscita in barca a vela.</span></div>
+        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-cibo.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">—</span><span class="experience-card__title">Cibo</span><span class="experience-card__desc">Breakfast al forno storico, street food, cena vista porto, brunch finale.</span></div>
+        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-isola.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">—</span><span class="experience-card__title">L'isola</span><span class="experience-card__desc">1,5 km² senza auto. Porto romano, calette nascoste, sentieri nel verde.</span></div>
+        <div class="experience-card" style="background-image:linear-gradient(rgba(0,0,204,.8),rgba(0,0,204,.8)),url('img/card-community.jpg');background-size:cover;background-position:center"><span class="experience-card__icon">—</span><span class="experience-card__title">Community</span><span class="experience-card__desc">Posti limitati. Un gruppo ristretto che condivide la stessa energia.</span></div>
       </div>
     </section>
     <section class="section--blue">
