@@ -363,9 +363,9 @@ body{text-align:left}
 .highlight-item__number{font-size:clamp(1.8rem,5vw,2.5rem)}
 .highlight-item__label{font-size:.55rem;letter-spacing:1.5px}
 
-/* Map */
-.island-map{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:2rem}
-.island-map svg{min-width:500px}
+/* Map — statica su mobile, entra nello schermo */
+.island-map{overflow:hidden;margin-bottom:1.5rem}
+.island-map svg{width:100%;height:auto;min-width:0}
 .map-legend{gap:.6rem}
 .map-legend__item{font-size:.6rem}
 
